@@ -23,7 +23,7 @@
             </h5>
             <h2 class="pt-5">¡Somos la Comunidad StartUp!</h2>
                 <div class="container">
-                  <search-component></search-component>
+                  <search-component :selectedOpt="selectedOpt"></search-component>
                 </div> 
           </div>
         </div>
@@ -53,7 +53,7 @@
               <h2>
                 ¡Somos la Comunidad StartUp!
               </h2>
-              <search-component></search-component>
+              <search-component :selectedOpt="selectedOpt"></search-component>
             </div>
           </div>
         </div>
@@ -287,7 +287,8 @@ export default {
       return {
         startupRoute: "startup",
         investorRoute: "investor",
-        professionalRoute: "professional"
+        professionalRoute: "professional",
+        selectedOpt: "startups"
       }
     }
  }

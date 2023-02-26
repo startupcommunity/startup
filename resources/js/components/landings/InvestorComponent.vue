@@ -26,7 +26,7 @@
                   (La conexión con los inversores dependen de los permisos concedidos por los mismos)
                 </h5>
                 <div class="container">
-                  <search-component></search-component>
+                  <search-component :selectedOpt="selectedOpt"></search-component>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@
                   (La conexión con los inversores dependen de los permisos concedidos por los mismos)
                 </h5>
                 <div class="container">
-                  <search-component></search-component>
+                  <search-component :selectedOpt="selectedOpt"></search-component>
                 </div> 
               </div>
             </div>
@@ -164,6 +164,14 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
     Pagination,
     Navigation,
   },
+  data() {
+        return {
+            startupRoute: "startup",
+            investorRoute: "investor",
+          professionalRoute: "professional",
+          selectedOpt: "investors"
+        };
+    },
 }
 </script>
 

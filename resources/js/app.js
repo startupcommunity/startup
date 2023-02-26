@@ -34,6 +34,7 @@ aos.init();
 // import 'vue-slider-component/theme/default.css'
 
 import 'vue3-carousel/dist/carousel.css'
+import "vue-awesome-paginate/dist/style.css";
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 
@@ -53,6 +54,11 @@ import SingleComponent from './components/SingleComponent.vue';
 import StartupCreateComponent from './components/forms/StartupCreateComponent.vue';
 import ProfessionalsSection from './components/sections/ProfessionalsSection.vue';
 
+import SingleProfessionalComponent from './components/SingleProfessionalComponent.vue';
+import InformationProfessionalComponent from './components/InformationProfessionalComponent.vue';
+import SingleInvestorComponent from './components/SingleInvestorComponent.vue';
+import InformationInvestorComponent from './components/InformationInvestorComponent.vue';
+
 //Modals
 import SendSuscribe from './components/forms/SendSuscribe.vue';
 import SuccessSubscribe from './components/sections/SuccessSubscribe.vue';
@@ -61,6 +67,7 @@ import SuccessSubscribe from './components/sections/SuccessSubscribe.vue';
 
 import SearchComponent from './components/forms/SearchComponent.vue';
 import { Bootstrap5Pagination } from 'laravel-vue-pagination';
+import  VueAwesomePaginate   from "vue-awesome-paginate";
 //login
 import RegisterComponent from './components/auth/RegisterComponent.vue';
 import PreRegisterComponent from './components/auth/PreRegisterComponent.vue';
@@ -80,6 +87,7 @@ app.component('search-component', SearchComponent);
 app.component('information-component', InformationComponent);
 app.component('single-component', SingleComponent);
 app.component('pagination', Bootstrap5Pagination);
+// app.component('pagination-own', VueAwesomePaginate);
 app.component('register-component', RegisterComponent);
 app.component('pre-register-component', PreRegisterComponent);
 app.component('home-component', HomeComponent);
@@ -88,6 +96,13 @@ app.component('startup-landing-component', StartupLandingComponent);
 app.component('professional-component', ProfessionalComponent);
 app.component('professionals-section', ProfessionalsSection);
 
+app.component('single-professional-component', SingleProfessionalComponent);
+app.component('information-professional-component', InformationProfessionalComponent);
+app.component('single-investor-component', SingleInvestorComponent);
+app.component('information-investor-component', InformationInvestorComponent);
+
+
+app.use(VueAwesomePaginate);
 //app.component('VueSlider', VueSlider)
 
 /**
