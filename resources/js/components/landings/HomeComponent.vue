@@ -39,7 +39,9 @@
                         </h5>
                         <h2 class="pt-5">¡Somos la Comunidad StartUp!</h2>
                         <div class="container">
-                            <search-component></search-component>
+                            <search-component
+                                :selectedOpt="selectedOpt"
+                            ></search-component>
                         </div>
                     </div>
                 </div>
@@ -75,13 +77,34 @@
                     <div class="col-12">
                         <div class="container-fluid px-0">
                             <h2>¡Somos la Comunidad StartUp!</h2>
-                            <search-component></search-component>
+                            <search-component
+                                :selectedOpt="selectedOpt"
+                            ></search-component>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End MainSection -->
+
+        <!-- ======= section buttons DEPRECATED ======= -->
+        <!-- <section class="frame-blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
+              <a :href="this.startupRoute" class="btn btn-outline-primary btn-lg btn-full">STARTUP O PROYECTOS</a>
+            </div>
+            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
+              <a :href="this.professionalRoute" class="btn btn-outline-primary btn-lg btn-full">PROFESIONALES</a>
+            </div>
+            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
+              <a :href="this.investorRoute" class="btn btn-outline-primary btn-lg btn-full">INVERSOR</a>
+            </div>
+          </div>
+        </div>
+        
+      </section> -->
+        <!-- End section buttons -->
 
         <div class="container">
             <div class="row px-5">
@@ -93,6 +116,9 @@
         <section class="bg-planet-space">
             <div class="container">
                 <div class="row">
+                    <!-- <div class="col-12">
+              <img src="img/backgrounds/home_feat.png" class="img-fluid">
+            </div> -->
                     <div class="col-12">
                         <div class="mx-lg-5 px-lg-5">
                             <div class="text-center" data-aos="fade-zoom-in">
@@ -372,11 +398,15 @@
 
 <script>
 export default {
+    setup() {
+        return {};
+    },
     data() {
         return {
             startupRoute: "startup",
             investorRoute: "investor",
             professionalRoute: "professional",
+            selectedOpt: "startups",
         };
     },
 };

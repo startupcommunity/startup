@@ -24,7 +24,7 @@
                 </h5>
                 <h2 class="pt-4">Decide en cual tripulación encajas mejor</h2>
                 <div class="container">
-                  <search-component></search-component>
+                  <search-component :selectedOpt="selectedOpt"></search-component>
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@
                 <img src="img/startup/rocket.png" class="img-fluid" alt="">
                 <h2 class="pt-4">Decide en cual tripulación encajas mejor</h2>
                 <div class="container">
-                  <search-component></search-component>
+                  <search-component :selectedOpt="selectedOpt"></search-component>
                 </div> 
               </div>
             </div>
@@ -183,7 +183,15 @@
 
 <script>
 export default {
-  name: 'ProfessionalComponent'
+  name: 'ProfessionalComponent',
+  data() {
+        return {
+          startupRoute: "startup",
+          investorRoute: "investor",
+          professionalRoute: "professional",
+          selectedOpt: "professionals"
+        };
+    },
 }
 </script>
 
