@@ -1,4 +1,21 @@
-// importar componentes
+// importar estilos
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "../css/custom.css";
+import "../assets/vendor/aos/aos.css";
+import "../assets/vendor/glightbox/css/glightbox.min.css";
+import "../assets/vendor/remixicon/remixicon.css";
+import "../assets/vendor/swiper/swiper-bundle.min.css";
+import "vue3-carousel/dist/carousel.css";
+import "vue-awesome-paginate/dist/style.css";
+
+// import plugins
+import "../js/bootstrap";
+import GlobalMixin from "./mixins/globalMixin.js";
+import VueAwesomePaginate from "vue-awesome-paginate";
+import { Bootstrap5Pagination } from "laravel-vue-pagination";
+
+// importar componentes vue
 import HomeComponent from "./components/landings/HomeComponent.vue";
 import InvestorComponent from "./components/landings/InvestorComponent.vue";
 import StartupLandingComponent from "./components/landings/StartupComponent.vue";
@@ -15,26 +32,13 @@ import SearchComponent from "./components/forms/SearchComponent.vue";
 import RegisterComponent from "./components/auth/RegisterComponent.vue";
 import PreRegisterComponent from "./components/auth/PreRegisterComponent.vue";
 import SingleProfessionalComponent from "./components/SingleProfessionalComponent.vue";
-import InformationProfessionalComponent from "./components/InformationProfessionalComponent.vue";
+import InformationProfessional from "./components/InformationProfessionalComponent.vue";
 import SingleInvestorComponent from "./components/SingleInvestorComponent.vue";
 import InformationInvestorComponent from "./components/InformationInvestorComponent.vue";
-import VueAwesomePaginate from "vue-awesome-paginate";
-import { Bootstrap5Pagination } from "laravel-vue-pagination";
 
-// importar bootstrap
-// importar estilos
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "../css/custom.css";
-import "../assets/vendor/aos/aos.css";
-import "../assets/vendor/glightbox/css/glightbox.min.css";
-import "../assets/vendor/remixicon/remixicon.css";
-import "../assets/vendor/swiper/swiper-bundle.min.css";
-import "vue3-carousel/dist/carousel.css";
-import "vue-awesome-paginate/dist/style.css";
-
-// import funciones
-import "../js/bootstrap";
+// módulos
+import Contact from "./modules/contact.js";
+import Term from "./modules/term.js";
 
 // crear app vue
 import { createApp } from "vue";
@@ -60,12 +64,14 @@ app.component("startup-landing-component", StartupLandingComponent);
 app.component("professional-component", ProfessionalComponent);
 app.component("professionals-section", ProfessionalsSection);
 app.component("single-professional-component", SingleProfessionalComponent);
-app.component(
-    "information-professional-component",
-    InformationProfessionalComponent
-);
+app.component("information-professional-component", InformationProfessional);
 app.component("single-investor-component", SingleInvestorComponent);
 app.component("information-investor-component", InformationInvestorComponent);
+
+// use and install
+app.use(GlobalMixin); // global mixin
+app.use(Contact); // modulo contacto
+app.use(Term); // modulo términos
 app.use(VueAwesomePaginate);
 
 // montar app

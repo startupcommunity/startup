@@ -381,14 +381,13 @@
 
                 <div class="row align-items-end pb-5" style="height: 35%">
                     <div class="col-12 text-center">
-                        <button
+                        <a
                             class="btn btn-primary btn-lg"
-                            type="button"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modal-investor"
+                            href="https://engine.thestartup-community.com/"
+                            target="_blank"
                         >
                             ¡QUIERO UNIRME!
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -398,9 +397,6 @@
 
 <script>
 export default {
-    setup() {
-        return {};
-    },
     data() {
         return {
             startupRoute: "startup",

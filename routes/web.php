@@ -12,14 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index'])
-->name('landings');
+    ->name('landings');
 Route::get('investor', [App\Http\Controllers\LandingController::class, 'investor'])
-->name('landings.investor');
+    ->name('landings.investor');
 Route::get('startup', [App\Http\Controllers\LandingController::class, 'startup'])
-->name('landings.startup');
+    ->name('landings.startup');
 Route::get('professional', [App\Http\Controllers\LandingController::class, 'professional'])
-->name('landings.professional');
+    ->name('landings.professional');
 
 Route::get('/select-role', [App\Http\Controllers\HomeController::class, 'selectRole'])->name('select-role');
 Route::get('/pre-register', [App\Http\Controllers\LandingController::class, 'preRegister'])->name('pre-register');
@@ -34,3 +35,9 @@ Route::get('/startups/create', [App\Http\Controllers\StartupController::class, '
 
 //Provisional
 Route::get('/logout', [App\Http\Controllers\LandingController::class, 'perform']);
+
+// contacto
+require __DIR__ . '/web/contact.php';
+
+// términos y condiciones
+require __DIR__ . '/web/terms.php';
