@@ -15,12 +15,22 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="d-flex justify-content-center">
-                                    <div class="searchBox search-input d-block d-flex justify-content-between">
-                                        <div class="search-bar search-bar-border">
-                                            <form @submit.prevent="getResults(0)">
+                                    <div
+                                        class="searchBox search-input d-block d-flex justify-content-between"
+                                    >
+                                        <div
+                                            class="search-bar search-bar-border"
+                                        >
+                                            <form
+                                                @submit.prevent="getResults(0)"
+                                            >
                                                 <div class="input-group">
-                                                    <span class="input-group-text icon-input">
-                                                        <i class="bi bi-sliders me-3"></i>
+                                                    <span
+                                                        class="input-group-text icon-input"
+                                                    >
+                                                        <i
+                                                            class="bi bi-sliders me-3"
+                                                        ></i>
                                                     </span>
                                                     <div class="rail-select">
                                                         <select
@@ -29,18 +39,31 @@
                                                             id="category"
                                                             aria-label="Default select"
                                                             v-model="category"
-                                                            @change="getResults(0)"
+                                                            @change="
+                                                                getResults(0)
+                                                            "
                                                         >
-                                                            <option value="" disabled hidden>
+                                                            <option
+                                                                value=""
+                                                                disabled
+                                                                hidden
+                                                            >
                                                                 Categorías
                                                             </option>
-                                                            <option selected value="startups">
+                                                            <option
+                                                                selected
+                                                                value="startups"
+                                                            >
                                                                 Startup
                                                             </option>
-                                                            <option value="professionals">
+                                                            <option
+                                                                value="professionals"
+                                                            >
                                                                 Profesional
                                                             </option>
-                                                            <option value="investors">
+                                                            <option
+                                                                value="investors"
+                                                            >
                                                                 Inversor
                                                             </option>
                                                         </select>
@@ -59,7 +82,9 @@
                                                         type="submit"
                                                         @click="getResults(0)"
                                                     >
-                                                        <i class="bi bi-search"></i>
+                                                        <i
+                                                            class="bi bi-search"
+                                                        ></i>
                                                     </button>
                                                 </div>
                                             </form>
@@ -78,7 +103,7 @@
             </div>
         </div>
 
-        <div class="row my-3 my-lg-5  justify-content-center h-75">
+        <div class="row my-3 my-lg-5 justify-content-center h-75">
             <div class="col-md-12">
                 <div class="card card-border-none">
                     <div class="card-body">
@@ -90,7 +115,8 @@
                                 <div v-if="category === 'professionals'">
                                     <div v-if="startup">
                                         <single-professional-component
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
                                             v-for="professional in laravelData"
                                             :key="professional._id"
                                             :professional="professional"
@@ -107,11 +133,12 @@
                                 <div v-else-if="category === 'investors'">
                                     <div v-if="startup">
                                         <single-investor-component
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                        v-for="investor in laravelData"
-                                        :key="investor._id"
-                                        :investor="investor"
-                                        @click="setStartup(investor)"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                            v-for="investor in laravelData"
+                                            :key="investor._id"
+                                            :investor="investor"
+                                            @click="setStartup(investor)"
                                         ></single-investor-component>
                                     </div>
                                     <div v-else>
@@ -123,7 +150,8 @@
                                 <div v-else>
                                     <div v-if="startup">
                                         <single-component
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
                                             v-for="startup in laravelData"
                                             :key="startup._id"
                                             :startup="startup"
@@ -169,7 +197,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         <div class="d-flex justify-content-center align-items-center">
             <vue-awesome-paginate
@@ -181,7 +208,6 @@
             />
         </div>
     </div>
-
 </template>
 <script>
 export default {
@@ -204,8 +230,7 @@ export default {
         onClickHandler(page) {
             this.getResults(page - 1);
         },
-        async getResults(page) {
-
+        getResults(page) {
             if (typeof page === "undefined") {
                 page = 0;
             }
@@ -235,7 +260,6 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
-
         },
         setStartup(startup) {
             this.startup = startup;

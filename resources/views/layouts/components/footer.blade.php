@@ -1,13 +1,8 @@
 <footer class="bg-[#0e5394]">
-    <div class="container py-20">
-        <div class="flex flex-col gap-5 md:flex-row justify-between text-center text-md-start">
+    <div class="container pt-20">
+        <div class="flex flex-col gap-3 md:flex-row justify-between text-center text-md-start">
             <div class="text-white">
-                <h5 class="font-bold text-lg">
-                    &copy; {{ config('app.name', 'Startup Community') }} {{ date('Y') }}
-                </h5>
-                <span class="font-light">
-                    Todos los derechos reservados.
-                </span>
+                <img src="/img/logos/white.png" alt="startup-community" class="mx-auto pb-4">
             </div>
             <div>
                 <h5 class="pb-2 text-lg font-bold">Politicas</h5>
@@ -32,6 +27,16 @@
                         info@thestartup-community.com
                     </a>
                 </p>
+            </div>
+        </div>
+        <div class="text-white text-center w-full mx-auto pt-5">
+            <div class="flex flex-col md:flex-row text-center justify-center">
+                <h5 class="font-bold text-lg">
+                    &copy; {{ date('Y') }} {{ config('app.name', 'Startup Community') }}
+                </h5>
+                <span class="font-light md:pl-3">
+                    - Todos los derechos reservados.
+                </span>
             </div>
         </div>
     </div>

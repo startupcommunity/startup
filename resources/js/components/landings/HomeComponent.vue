@@ -31,11 +31,12 @@
                             La comunidad que conecta Startups, Profesionales e
                             Inversión
                         </h3>
-                        <h5>
+                        <h5 class="font-thin leading-6">
                             Nuestra misión consiste en aportar la conexión para
                             que puedas desarrollar<br />
-                            <strong>proyectos únicos</strong> que te permitan
-                            alcanzar <strong>nuevos universos.</strong>
+                            <strong class="font-bold">proyectos únicos</strong>
+                            que te permitan alcanzar
+                            <strong class="font-bold">nuevos universos.</strong>
                         </h5>
                         <h2 class="pt-5">¡Somos la Comunidad StartUp!</h2>
                         <div class="container">
@@ -87,25 +88,6 @@
         </section>
         <!-- End MainSection -->
 
-        <!-- ======= section buttons DEPRECATED ======= -->
-        <!-- <section class="frame-blue">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
-              <a :href="this.startupRoute" class="btn btn-outline-primary btn-lg btn-full">STARTUP O PROYECTOS</a>
-            </div>
-            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
-              <a :href="this.professionalRoute" class="btn btn-outline-primary btn-lg btn-full">PROFESIONALES</a>
-            </div>
-            <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
-              <a :href="this.investorRoute" class="btn btn-outline-primary btn-lg btn-full">INVERSOR</a>
-            </div>
-          </div>
-        </div>
-        
-      </section> -->
-        <!-- End section buttons -->
-
         <div class="container">
             <div class="row px-5">
                 <div class="d-lines"></div>
@@ -116,19 +98,17 @@
         <section class="bg-planet-space">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-12">
-              <img src="img/backgrounds/home_feat.png" class="img-fluid">
-            </div> -->
                     <div class="col-12">
                         <div class="mx-lg-5 px-lg-5">
                             <div class="text-center" data-aos="fade-zoom-in">
                                 <h2>¡Prepárate para despegar!</h2>
-                                <h4 class="mx-lg-5 px-lg-5">
+                                <h5 class="mx-lg-5 px-lg-5 font-thin leading-6">
                                     Conoce los beneficios dentro de StartUp
-                                    Community para que puedas cambiar el<strong>
-                                        cambiar el mundo.</strong
-                                    >
-                                </h4>
+                                    Community para que puedas cambiar el
+                                    <span class="font-bold">
+                                        cambiar el mundo.
+                                    </span>
+                                </h5>
                             </div>
                         </div>
                     </div>
@@ -138,7 +118,7 @@
             <!-- Benefits Web-->
             <div class="container d-none d-md-block">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 pt-2 pb-5">
                         <div
                             class="row"
                             data-aos="zoom-in"
@@ -146,11 +126,15 @@
                         >
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_1.png" alt="" />
+                                    <img
+                                        src="img/home/col_1.png"
+                                        alt="big-bag"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>El BigBang</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">El BigBang</h6>
+                                    <p class="font-thin">
                                         Los inicios son difíciles y a veces
                                         explosivos, siempre es bueno tener
                                         apoyo.
@@ -159,11 +143,17 @@
                             </div>
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_2.png" alt="" />
+                                    <img
+                                        src="img/home/col_2.png"
+                                        alt="estrellas"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>Muestra tu estrella</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">
+                                        Muestra tu estrella
+                                    </h6>
+                                    <p class="font-thin">
                                         Da visibilidad a tu proyecto o StartUp
                                         para su proyección y difusión.
                                     </p>
@@ -171,11 +161,17 @@
                             </div>
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_3.png" alt="" />
+                                    <img
+                                        src="img/home/col_3.png"
+                                        alt="civilizaciones"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>Conoce otras civilizaciones</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">
+                                        Conoce otras civilizaciones
+                                    </h6>
+                                    <p class="font-thin">
                                         Más emprendedores, profesionales
                                         expertos e inversores quieren conocerte.
                                     </p>
@@ -183,11 +179,17 @@
                             </div>
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_4.png" alt="" />
+                                    <img
+                                        src="img/home/col_4.png"
+                                        alt="universos"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>Explora nuevos universos</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">
+                                        Explora nuevos universos
+                                    </h6>
+                                    <p class="font-thin">
                                         Conoce proyectos que te puedan guiar,
                                         permitan participar o aportar valor.
                                     </p>
@@ -195,11 +197,17 @@
                             </div>
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_5.png" alt="" />
+                                    <img
+                                        src="img/home/col_5.png"
+                                        alt="ciencia"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>Cuestión de Fe y Ciencia</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">
+                                        Cuestión de Fe y Ciencia
+                                    </h6>
+                                    <p class="font-thin">
                                         Creemos en el poder de la innovación,
                                         investigación, desarrollo y compartir la
                                         experiencia.
@@ -208,11 +216,15 @@
                             </div>
                             <div class="col-lg-2 col-sm-4 col-xs-6">
                                 <div class="home-f-icon text-center">
-                                    <img src="img/home/col_6.png" alt="" />
+                                    <img
+                                        src="img/home/col_6.png"
+                                        alt="Hipervelocidad"
+                                        class="mx-auto"
+                                    />
                                 </div>
-                                <div class="home-f-text">
-                                    <h6>Hipervelocidad</h6>
-                                    <p>
+                                <div class="bg-app-blue-1 p-2 h-[9rem]">
+                                    <h6 class="font-bold">Hipervelocidad</h6>
+                                    <p class="font-thin">
                                         Acelera y traza la ruta de tu StartUp
                                         con servicios premium a medida.
                                     </p>
@@ -342,7 +354,7 @@
             <div class="container-fluid bg-moon-astro">
                 <div class="row align-items-start" style="height: 20%">
                     <div class="col-12 text-center">
-                        <h2 class="text-strong">
+                        <h2 class="font-bold">
                             Conoce nuestros tres universos
                         </h2>
                     </div>
@@ -352,13 +364,14 @@
                     class="row align-items-sm-end align-items-xs-start"
                     style="height: 50%"
                 >
-                    <div class="col-md-4 col-xs-12 text-center">
+                    <div class="col-md-4 col-xs-12 text-center md:mb-20">
                         <a
                             :href="this.startupRoute"
                             class="btn btn-outline-primary"
                             style="min-width: 200px"
-                            >Startup</a
                         >
+                            Startup
+                        </a>
                     </div>
                     <div class="col-md-4 col-xs-12 text-center">
                         <a
@@ -368,7 +381,7 @@
                             >Profesional</a
                         >
                     </div>
-                    <div class="col-md-4 col-xs-12 text-center">
+                    <div class="col-md-4 col-xs-12 text-center md:mb-20">
                         <a
                             :href="this.investorRoute"
                             class="btn btn-outline-primary"
@@ -382,7 +395,7 @@
                 <div class="row align-items-end pb-5" style="height: 35%">
                     <div class="col-12 text-center">
                         <a
-                            class="btn btn-primary btn-lg"
+                            class="btn btn-primary btn-lg px-5"
                             href="https://engine.thestartup-community.com/"
                             target="_blank"
                         >

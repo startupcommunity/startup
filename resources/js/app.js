@@ -1,5 +1,7 @@
 // importar estilos
 import "bootstrap/dist/css/bootstrap.css";
+// bundle de bootstrap
+import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../css/custom.css";
 import "../assets/vendor/aos/aos.css";

@@ -9,18 +9,13 @@
                     <img
                         :src="investor.logo ? investor.logo : 'img/frame.png'"
                         :alt="investor.name"
-                        class="rounded-circle single-card-logo-inf"
+                        class="aspect-square w-[60px] h-[60px] max-w-[60px] max-h-[60px] rounded-full object-center object-contain border-2 border-blue-400"
                     />
                 </div>
                 <div class="col-md-8">
                     <h4 class="dark-text">{{ investor.name }}</h4>
                 </div>
                 <div class="col-md-2">
-                    <!--<img
-                        src="img/single-logo-startup.png"
-                        class="single-type-logo"
-                    />
-                    -->
                 </div>
             </div>
 
