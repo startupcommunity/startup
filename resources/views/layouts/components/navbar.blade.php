@@ -19,35 +19,43 @@
                 </button>
             </div>
             <div class="offcanvas-body pt-5">
-                <ul class="flex flex-col justify-center items-center gap-4 pr-5 border-b pb-5 border-gray-100">
-                    <li>
-                        <a class="text-white hover:no-underline no-underline font-bold text-lg" href="#">Home</a>
-                    </li>
+                <ul
+                    class="flex flex-col justify-center items-center gap-4 pr-8 border-b w-72 mx-auto pb-5 border-gray-100">
                     <li>
                         <a class="text-white hover:no-underline no-underline font-bold text-lg"
-                            href="#">Startup</a>
+                            href="{{ route('landings') }}">
+                            Home
+                        </a>
                     </li>
                     <li>
-                        <a class="text-white hover:no-underline no-underline font-bold text-lg"
-                            href="#">Profesionales</a>
+                        <a class="text-white hover:no-underline no-underline font-bold text-lg" href="{{ route('landings.startup') }}">
+                            Startup
+                        </a>
                     </li>
                     <li>
-                        <a class="text-white hover:no-underline no-underline font-bold text-lg"
-                            href="#">Inversor</a>
+                        <a class="text-white hover:no-underline no-underline font-bold text-lg" href="{{ route('landings.professional') }}">
+                            Profesionales
+                        </a>
                     </li>
                     <li>
-                        <a class="text-white hover:no-underline no-underline font-bold text-lg"
-                            href="#">Comunidad</a>
+                        <a class="text-white hover:no-underline no-underline font-bold text-lg" href="{{ route('landings.investor') }}">
+                            Inversor
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:no-underline no-underline font-bold text-lg" href="#">
+                            Comunidad
+                        </a>
                     </li>
                 </ul>
 
                 <div class="flex flex-col items-center gap-3 pt-5">
                     <a class="border-2 border-fuchsia-700 text-white py-2 px-10 uppercase no-underline hover:no-underline"
-                        href="#">
+                        href="{{ route('engine.login') }}" target="_blank">
                         Iniciar sesion
                     </a>
                     <a class="border-2 border-fuchsia-700 bg-fuchsia-700 text-white py-2 px-10 uppercase no-underline hover:no-underline"
-                        href="#">
+                        href="{{ route('engine.register') }}" target="_blank">
                         Crear cuenta
                     </a>
                 </div>
@@ -92,8 +100,7 @@
                 </li>
             </ul>
             <div>
-                <a class="btn btn-primary btn-lg uppercase" href="https://engine.thestartup-community.com/"
-                    target="_blank">
+                <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.register') }}" target="_blank">
                     @if (request()->route()->uri === 'startup')
                         ¡QUIERO UNIRME!
                     @elseif (request()->route()->uri === 'investor')
