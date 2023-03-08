@@ -61,6 +61,7 @@ export default {
                  * Error de validación por laravel
                  */
                 $validationErrorMsj(errors) {
+                    console.error(errors);
                     if (errors.response?.data?.errors) {
                         const data = errors.response.data.errors;
                         let mjsErrors = [];
@@ -78,6 +79,26 @@ export default {
                             text: separateMsj,
                         });
                     }
+                },
+            },
+
+            computed: {
+                /** Api kiota */
+                $apiKiotaUrl() {
+                    return "https://explorer.kiota.com/";
+                },
+
+                /** X-auth */
+                $xAuthKiota() {
+                    return "BucAFm3xS84NkHL";
+                },
+
+                /** endpoints de kiota */
+                $kiotaEp() {
+                    return {
+                        // startups
+                        startups: this.$apiKiotaUrl + "startups",
+                    };
                 },
             },
         });
