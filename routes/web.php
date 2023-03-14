@@ -36,3 +36,6 @@ require __DIR__ . '/web/terms.php';
 
 // engine
 require __DIR__ . '/web/engine.php';
+
+// social media
+require __DIR__ . '/web/social-media.php';
