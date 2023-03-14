@@ -59,14 +59,14 @@
                                         </div>
                                     </div>
                                     <div class="col-2">
-                                        <img
+                                        <!-- <img
                                             src="img/single-logo-startup.png"
                                             class="single-type-logo"
                                         />
                                         <img
                                             src="img/single-logo-startup-white.png"
                                             class="single-type-logo-white"
-                                        />
+                                        /> -->
                                     </div>
                                 </div>
                             </div>

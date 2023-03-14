@@ -4,9 +4,9 @@
             <form action="directory" method="GET">
                 <div class="search-bar">
                     <div class="input-group">
-                        <span class="input-group-text icon-input">
+                        <!-- <span class="input-group-text icon-input">
                             <i class="bi bi-ui-checks"></i>
-                        </span>
+                        </span> -->
 
                         <div class="rail-select">
                             <select
@@ -57,8 +57,15 @@ export default {
                 { text: "Profesional", value: "professionals" },
                 { text: "Inversor", value: "investors" },
             ],
+            defaultOption: "startups",
         };
-    }
+    },
+
+    created() {
+        if (this.selected == null) {
+            this.selected = this.defaultOption;
+        }
+    },
 };
 </script>
 

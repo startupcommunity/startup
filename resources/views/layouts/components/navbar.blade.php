@@ -102,9 +102,26 @@
                 </li>
                 </li>
             </ul>
-            <div>
+            <div class="flex justify-end items-center gap-3">
                 <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.register') }}" target="_blank">
                     ¡QUIERO Registrarme!
+                </a>
+                <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.login') }}" target="_blank">
+                    {{--  svg login  --}}
+                    <div class="flex items-center gap-1">
+                        <svg width="68px" height="68px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M15 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H15M11 16L15 12M15 12L11 8M15 12H3"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                        <span>Login</span>
+                    </div>
                 </a>
             </div>
         </div>

@@ -16,6 +16,7 @@ import "../js/bootstrap";
 import GlobalMixin from "./mixins/globalMixin.js";
 import VueAwesomePaginate from "vue-awesome-paginate";
 import { Bootstrap5Pagination } from "laravel-vue-pagination";
+import { VueReCaptcha } from "vue-recaptcha-v3";
 
 // importar componentes vue
 import HomeComponent from "./components/landings/HomeComponent.vue";
@@ -75,6 +76,7 @@ app.use(GlobalMixin); // global mixin
 app.use(Contact); // modulo contacto
 app.use(Term); // modulo términos
 app.use(VueAwesomePaginate);
+app.use(VueReCaptcha, { siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY });
 
 // montar app
 app.mount("#app");

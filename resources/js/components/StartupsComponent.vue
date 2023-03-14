@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="row mt-5 justify-content-center mh-25">
+        <div class="row mt-5 justify-content-center mh-25 shadow-sm">
             <div class="col-md-12">
                 <div class="card card-border-none">
                     <div class="card-body p-2">
@@ -8,10 +8,10 @@
                             <div
                                 class="col-md-2 my-3 d-flex justify-content-center"
                             >
-                                <a class="search-link" href="/"
-                                    ><i class="bi bi-arrow-left px-2"></i>Volver
-                                    al home</a
-                                >
+                                <a class="search-link" href="/">
+                                    <i class="bi bi-arrow-left px-2"></i>
+                                    Volver al home
+                                </a>
                             </div>
                             <div class="col-md-6">
                                 <div class="d-flex justify-content-center">
@@ -25,13 +25,13 @@
                                                 @submit.prevent="getResults(0)"
                                             >
                                                 <div class="input-group">
-                                                    <span
+                                                    <!-- <span
                                                         class="input-group-text icon-input"
                                                     >
                                                         <i
                                                             class="bi bi-sliders me-3"
                                                         ></i>
-                                                    </span>
+                                                    </span> -->
                                                     <div class="rail-select">
                                                         <select
                                                             class="form-select shadow-none search-input"
@@ -103,7 +103,7 @@
             </div>
         </div>
 
-        <div class="row my-3 my-lg-5 justify-content-center h-75">
+        <div class="row my-3 my-lg-5 justify-content-center h-75 shadow-sm">
             <div class="col-md-12">
                 <div class="card card-border-none">
                     <div class="card-body">

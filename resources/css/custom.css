@@ -350,23 +350,35 @@ label {
 }
 
 .bg-investor-main {
-    background: url(/img/backgrounds/investor_bg.png) no-repeat right center;
-    max-width: 1440px;
+    background: url(/img/backgrounds/investor_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* max-width: 1440px; */
 }
 
 .bg-startup-main {
-    background: url(/img/startup/bg-main.png) no-repeat right bottom;
+    background: url(/img/startup/bg-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 619px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 .bg-moon {
-    background: url(/img/backgrounds/moon.png) no-repeat center bottom;
+    background: url(/img/backgrounds/moon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-moon-astro {
-    background: url(/img/backgrounds/home_moon_astro.png) no-repeat center bottom;
-    height: 562px;
+    background: url(/img/backgrounds/home_moon_astro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
 }
 
 .bg-planet-space {

@@ -4,7 +4,10 @@
         <carousel :items-to-show="items" v-else>
             <slide v-for="startup in startups" :key="startup">
                 <div class="card comming-card">
-                    <div class="d-flex justify-content-center cursor-pointer">
+                    <div
+                        class="d-flex justify-content-center cursor-pointer"
+                        @click.stop="goToDirectory(startup.name)"
+                    >
                         <img
                             :src="startup.logo ? startup.logo : 'img/frame.png'"
                             class="aspect-square 8-[120px] h-[180px] max-w-[180px] max-h-[180px] rounded-full object-center object-contain border-2 border-blue-400 bg-white"
@@ -54,6 +57,10 @@ export default {
     },
 
     methods: {
+        /**
+         * Ni idea de que hace
+         * supongo tiene que ver con el responsive ¿?
+         */
         handleResize() {
             this.window.width = window.innerWidth;
             if (this.window.width < 768) {
@@ -65,6 +72,9 @@ export default {
             }
         },
 
+        /**
+         * Cargar los datos de las startups
+         */
         loadData() {
             this.loading = true;
             const data = JSON.stringify({
@@ -93,6 +103,16 @@ export default {
                 })
                 .catch((error) => this.$validationErrorMsj(error))
                 .finally(() => (this.loading = false));
+        },
+
+        /**
+         * Ir al directorio de una startup
+         * con el nombre de la startup
+         *
+         * @param {String} name     Nombre de la startup
+         */
+        goToDirectory(name) {
+            globalThis.location.href = `/directory?category=${this.category}&search=${name}`;
         },
     },
 };

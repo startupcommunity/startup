@@ -110,7 +110,11 @@ export default {
     },
 
     methods: {
-        saveNewMessage() {
+        async saveNewMessage() {
+            await this.$recaptchaLoaded();
+            const token = await this.$recaptcha("contact");
+
+            // validar formulario
             if (!this.formISValid) {
                 return this.$customMsj({
                     title: "Aviso",
@@ -119,8 +123,16 @@ export default {
                 });
             }
 
-            this.loading = true;
+            // validar el token
+            if (!token) {
+                return this.$customMsj({
+                    title: "Aviso",
+                    text: "Ocurrió un error al enviar el mensaje, intente de nuevo mas tarde",
+                    icon: "error",
+                });
+            }
 
+            this.loading = true;
             axios
                 .post(route("contact.store"), this.form)
                 .then((resp) => {
@@ -148,6 +160,18 @@ export default {
                 })
                 .catch((error) => this.$validationErrorMsj(error))
                 .finally(() => (this.loading = false));
+        },
+
+        async recaptcha() {
+            // (optional) Wait until recaptcha has been loaded.
+            await this.$recaptchaLoaded();
+
+            // Execute reCAPTCHA with action "login".
+            const token = await this.$recaptcha("login");
+
+            // Do stuff with the received token.
+
+            console.log(token);
         },
     },
 };

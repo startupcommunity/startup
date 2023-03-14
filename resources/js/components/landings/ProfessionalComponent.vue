@@ -148,10 +148,10 @@
             <div data-aos="fade-up" class="bg-moon py-5">
                 <div class="container text-center">
                     <div class="text-center">
-                        <h2><strong>Conoce los últimos StartUps</strong></h2>
+                        <h2><strong>Conoce las ultimas StartUps</strong></h2>
                         <h4>
-                            Adéntrate en la comunidad StartUp y conoce a
-                            detalles los pioneros de grandes ideas
+                            Adéntrate en la comunidad StartUp y conoce en
+                            detalle los pioneros de grandes ideas
                         </h4>
                     </div>
                     <div class="mx-lg-5 py-5">

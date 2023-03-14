@@ -87,7 +87,7 @@
                                 <h2>¡Prepárate para despegar!</h2>
                                 <h5 class="mx-lg-5 px-lg-5 font-thin leading-6">
                                     Conoce los beneficios dentro de StartUp
-                                    Community para que puedas cambiar el
+                                    Community para que puedas
                                     <span class="font-bold">
                                         cambiar el mundo.
                                     </span>
@@ -282,7 +282,7 @@
         <!-- End Features Section -->
 
         <section data-aos="fade-up" data-aos-duration="2000">
-            <div class="container-fluid bg-moon-astro">
+            <div class="container-fluid bg-moon-astro bg-center bg-cover">
                 <div class="row align-items-start" style="height: 20%">
                     <div class="col-12 text-center">
                         <h2 class="font-bold">
@@ -315,9 +315,9 @@
 
                 <div class="row align-items-end pb-5" style="height: 35%">
                     <div class="col-12 text-center">
-                        <a class="btn btn-primary btn-lg px-5" href="https://engine.thestartup-community.com/"
+                        <a class="btn btn-primary btn-lg px-5 uppercase" href="https://engine.thestartup-community.com/"
                             target="_blank">
-                            ¡QUIERO UNIRME!
+                            ¡Quiero registrarme!
                         </a>
                     </div>
                 </div>

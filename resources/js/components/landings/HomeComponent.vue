@@ -252,7 +252,7 @@
                                     </h3>
                                     <p>
                                         Los inicios son difíciles y a veces
-                                        exdivlosivos, siempre es bueno tener
+                                        exclusivos, siempre es bueno tener
                                         apoyo.
                                     </p>
                                 </div>
@@ -267,7 +267,7 @@
                                         <strong>Muestra tu estrella</strong>
                                     </h3>
                                     <p>
-                                        Da visibilidad a tu proyecto o S tartUp
+                                        Da visibilidad a tu proyecto o StartUp
                                         para su proyección y difusión.
                                     </p>
                                 </div>
@@ -395,11 +395,11 @@
                 <div class="row align-items-end pb-5" style="height: 35%">
                     <div class="col-12 text-center">
                         <a
-                            class="btn btn-primary btn-lg px-5"
+                            class="btn btn-primary btn-lg px-5 uppercase"
                             href="https://engine.thestartup-community.com/"
                             target="_blank"
                         >
-                            ¡QUIERO UNIRME!
+                            ¡Quiero registrarme!
                         </a>
                     </div>
                 </div>

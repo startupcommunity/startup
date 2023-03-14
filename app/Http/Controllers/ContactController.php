@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateContactMessageRequest;
+use App\Mail\ContactMessageMail;
+use App\Mail\NotifyContactMessage;
 use App\Models\Contact;
 use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -41,6 +44,16 @@ class ContactController extends Controller
     {
         try {
             $contact = Contact::create($request->validated());
+
+            $email = new ContactMessageMail($request->validated());
+            $adminEmail = new NotifyContactMessage($request->validated());
+
+            // Envía el correo al usuario
+            Mail::to($request->email)->send($email);
+
+            // notifica a los admin
+            Mail::to(env('MAIL_TO_KRISTIAN'))->send($adminEmail);
+            Mail::to(env('MAIL_TO_MIGUEL'))->send($adminEmail);
 
             return response()->json([
                 'message' => 'Mensaje enviado correctamente',

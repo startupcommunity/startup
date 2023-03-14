@@ -8,11 +8,11 @@
                             Términos y Condiciones
                         </h1>
                     </div>
-                    <p class="text-zinc-900 leading-5 text-justify">Actualizado el {{ updateDate }}</p>
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">Actualizado el {{ updateDate }}</p>
                     <h1 class="font-bold text-xl text-zinc-900">
                         Términos generales
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Al acceder y realizar un pedido con The StartUp
                         Community, usted confirma que está de acuerdo y sujeto a
                         los términos de servicio contenidos en los Términos y
@@ -37,7 +37,7 @@
                         la política de uso de recursos en cualquier momento.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Licencia</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community le otorga una licencia revocable,
                         no exclusiva, intransferible y limitada para descargar,
                         instalar y usar la plataforma estrictamente de acuerdo
@@ -62,104 +62,104 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Definiciones y términos clave
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Para ayudar a explicar las cosas de la manera más clara
                         posible en estos Términos y Condiciones, cada vez que se
                         hace referencia a cualquiera de estos términos, se
                         definen estrictamente como:
                     </p>
-                    <ul>
-                        <li>
+                    <ul class="text-black">
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Cookie: pequeña cantidad de datos generados por un
                             sitio web y guardados por su navegador web. Se
                             utiliza para identificar su navegador, proporcionar
                             análisis, recordar información sobre usted, como su
                             preferencia de idioma o información de inicio de
                             sesión.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Compañía: cuando estos Términos y Condiciones
                             mencionan "Compañía", "nosotros", "nos" o "nuestro",
                             se refiere a The StartUp Community, que es
                             responsable de su información en virtud de estos
                             Términos y Condiciones.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Plataforma: sitio web de Internet, aplicación web o
                             aplicación digital de cara al público de The StartUp
                             Community.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             País: donde se encuentra The StartUp Community o los
                             propietarios / fundadores de The StartUp Community,
                             en este caso es España.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Dispositivo: cualquier dispositivo conectado a
                             Internet, como un teléfono, tablet, computadora o
                             cualquier otro dispositivo que se pueda usar para
                             visitar The StartUp Community y usar los servicios.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Servicio: se refiere al servicio brindado por The
                             StartUp Community como se describe en los términos
                             relativos (si están disponibles) y en esta
                             plataforma.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Terceros: se refiere a anunciantes, patrocinadores
                             de concursos, socios promocionales y de marketing, y
                             otros que brindan nuestro contenido o cuyos
                             productos o servicios que creemos que pueden
                             interesarle.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Sitio web: el sitio de The StartUp Community, al que
                             se puede acceder a través de esta URL:
                             {{ domain }}
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Usted: una persona o entidad que está registrada con
                             The StartUp Community para utilizar los Servicios.
-                        </li>
+                        </p>
                     </ul>
                     <h1 class="font-bold text-xl text-zinc-900">
                         Restricciones
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Usted acepta no hacerlo y no permitirá que otros:
                     </p>
                     <ul>
-                        <li>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Licenciar, vender, alquilar, arrendar, asignar,
                             distribuir, transmitir, alojar, subcontratar,
                             divulgar o explotar comercialmente la plataforma o
                             poner la plataforma a disposición de terceros.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Modificar, realizar trabajos derivados,
                             desensamblar, descifrar, realizar una compilación
                             inversa o realizar ingeniería inversa de cualquier
                             parte de la plataforma.
-                        </li>
-                        <li>
+                        </p>
+                        <p class="text-zinc-900 leading-5 text-justify text-sm pb-1">
                             Eliminar, alterar u ocultar cualquier aviso de
                             propiedad (incluido cualquier aviso de derechos de
                             autor o marca registrada) de sus afiliados, socios,
                             proveedores o licenciatarios de la plataforma.
-                        </li>
+                        </p>
                     </ul>
                     <h1 class="font-bold text-xl text-zinc-900">
                         Política de Devolución y Reembolso
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Gracias por comprar en The StartUp Community. Apreciamos
                         el hecho de que le guste comprar las cosas que
                         construimos. También queremos asegurarnos de que tenga
                         una experiencia gratificante mientras explora, evalúa y
                         compra nuestros productos.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Al igual que con cualquier experiencia de compra,
                         existen términos y condiciones que se aplican a las
                         transacciones en The StartUp Community. Seremos tan
@@ -169,7 +169,7 @@
                         términos junto con la Política de privacidad de The
                         StartUp Community.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si por alguna razón no está completamente satisfecho con
                         algún bien o servicio que le brindamos, no dude en
                         contactarnos y discutiremos cualquiera de los problemas
@@ -178,14 +178,14 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Tus sugerencias
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Cualquier, comentario, idea, mejora o sugerencia
                         (colectivamente, "Sugerencias") que usted proporcione a
                         The StartUp Community con respecto a la plataforma
                         seguirá siendo propiedad única y exclusiva de The
                         StartUp Community.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community tendrá la libertad de usar,
                         copiar, modificar, publicar o redistribuir las
                         Sugerencias para cualquier propósito y de cualquier
@@ -194,7 +194,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Tu consentimiento
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Hemos actualizado nuestros Términos y condiciones para
                         brindarle total transparencia sobre lo que se establece
                         cuando visita nuestro sitio y cómo se utiliza. Al
@@ -205,7 +205,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Enlaces a otros Sitios Web
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Estos Términos y Condiciones se aplican solo a los
                         Servicios. Los Servicios pueden contener enlaces a otros
                         sitios web que The StartUp Community no opera ni
@@ -224,7 +224,7 @@
                         usted.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Cookies</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community utiliza "cookies" para identificar
                         las áreas de nuestro sitio web que ha visitado. Una
                         cookie es una pequeña porción de datos que su navegador
@@ -247,7 +247,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Cambios en nuestros Términos y Condiciones
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Usted reconoce y acepta que The StartUp Community puede
                         dejar de brindarle (de forma permanente o temporal) el
                         Servicio (o cualquier función dentro del Servicio) a
@@ -262,7 +262,7 @@
                         cualquier archivo u otro material contenido en su
                         cuenta.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si decidimos cambiar nuestros Términos y condiciones,
                         publicaremos esos cambios en esta página y / o
                         actualizaremos la fecha de modificación de los Términos
@@ -271,7 +271,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Modificaciones a nuestra plataforma
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community se reserva el derecho de
                         modificar, suspender o interrumpir, temporal o
                         permanentemente, la plataforma o cualquier servicio al
@@ -281,14 +281,14 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Actualizaciones a nuestra plataforma
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community puede, de vez en cuando,
                         proporcionar mejoras a las características /
                         funcionalidad de la plataforma, que pueden incluir
                         parches, corrección de errores, actualizaciones, mejoras
                         y otras modificaciones ("Actualizaciones").
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Las actualizaciones pueden modificar o eliminar ciertas
                         características y / o funcionalidades de la plataforma.
                         Usted acepta que The StartUp Community no tiene la
@@ -296,7 +296,7 @@
                         continuar proporcionándole o habilitando características
                         y / o funcionalidades particulares de la plataforma.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Además, acepta que todas las Actualizaciones (i) se
                         considerarán una parte integral de la plataforma y (ii)
                         estarán sujetas a los términos y condiciones de este
@@ -305,14 +305,14 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Servicios de Terceros
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Podemos mostrar, incluir o poner a disposición contenido
                         de terceros (incluidos datos, información, aplicaciones
                         y otros servicios de productos) o proporcionar enlaces a
                         sitios web o servicios de terceros ("Servicios de
                         terceros").
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Usted reconoce y acepta que The StartUp Community no
                         será responsable de ningún Servicio de terceros,
                         incluida su precisión, integridad, puntualidad, validez,
@@ -322,7 +322,7 @@
                         obligación o responsabilidad ante usted o cualquier otra
                         persona o entidad por los Servicios de terceros.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Los Servicios de terceros y los enlaces a los mismos se
                         brindan únicamente para su conveniencia y usted accede a
                         ellos y los usa completamente bajo su propio riesgo y
@@ -331,29 +331,29 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Duración y Terminación
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Este Acuerdo permanecerá en vigor hasta que usted o The
                         StartUp Community lo rescindan.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community puede, a su entera discreción, en
                         cualquier momento y por cualquier motivo o sin él,
                         suspender o rescindir este Acuerdo con o sin previo
                         aviso.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Este Acuerdo terminará inmediatamente, sin previo aviso
                         de The StartUp Community, en caso de que no cumpla con
                         alguna de las disposiciones de este Acuerdo. También
                         puede rescindir este Acuerdo eliminando la plataforma y
                         todas las copias del mismo de su computadora.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Tras la rescisión de este Acuerdo, deberá dejar de
                         utilizar la plataforma y eliminar todas las copias de la
                         plataforma de su computadora.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         La rescisión de este Acuerdo no limitará ninguno de los
                         derechos o recursos de The StartUp Community por ley o
                         en equidad en caso de incumplimiento por su parte
@@ -363,7 +363,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Aviso de infracción de Derechos de Autor
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si usted es propietario de los derechos de autor o el
                         agente de dicho propietario y cree que cualquier
                         material de nuestra plataforma constituye una infracción
@@ -384,7 +384,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Indemnización
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Usted acepta indemnizar y eximir de responsabilidad a
                         The StartUp Community y a sus empresas matrices,
                         subsidiarias, afiliadas, funcionarios, empleados,
@@ -398,7 +398,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Sin garantías
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         La plataforma se le proporciona "TAL CUAL" y "SEGÚN
                         DISPONIBILIDAD" y con todas las fallas y defectos sin
                         garantía de ningún tipo. En la medida máxima permitida
@@ -422,7 +422,7 @@
                         rendimiento o confiabilidad o que no tengan errores o
                         que cualquier error o defecto puede o será corregido.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Sin limitar lo anterior, ni The StartUp Community ni
                         ningún proveedor de The StartUp Community hace ninguna
                         representación o garantía de ningún tipo, expresa o
@@ -439,7 +439,7 @@
                         troyanos, gusanos, malware, bombas de tiempo u otros
                         componentes nocivos.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Algunas jurisdicciones no permiten la exclusión o las
                         limitaciones de las garantías implícitas o las
                         limitaciones de los derechos legales aplicables de un
@@ -449,7 +449,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Limitación de Responsabilidad
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Sin perjuicio de los daños en los que pueda incurrir, la
                         responsabilidad total de The StartUp Community y
                         cualquiera de sus proveedores en virtud de cualquier
@@ -457,7 +457,7 @@
                         todo lo anterior se limitará al monto realmente pagado
                         por usted para la plataforma.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         En la máxima medida permitida por la ley aplicable, en
                         ningún caso The StartUp Community o sus proveedores
                         serán responsables de ningún daño especial, incidental,
@@ -474,7 +474,7 @@
                         posibilidad de tales daños e incluso si el recurso no
                         cumple con su propósito esencial.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Algunos estados / jurisdicciones no permiten la
                         exclusión o limitación de daños incidentales o
                         consecuentes, por lo que es posible que la limitación o
@@ -483,7 +483,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Divisibilidad
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si alguna disposición de este Acuerdo se considera
                         inaplicable o inválida, dicha disposición se cambiará e
                         interpretará para lograr los objetivos de dicha
@@ -491,7 +491,7 @@
                         aplicable y las disposiciones restantes continuarán en
                         pleno vigor y efecto.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Este Acuerdo, junto con la Política de privacidad y
                         cualquier otro aviso legal publicado por The StartUp
                         Community en los Servicios, constituirá el acuerdo
@@ -514,7 +514,7 @@
                         DICHA CAUSA DE ACCIÓN ESTÁ PERMANENTEMENTE PROHIBIDA.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Renuncia</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Salvo lo dispuesto en el presente, el hecho de no
                         ejercer un derecho o exigir el cumplimiento de una
                         obligación en virtud de este Acuerdo no afectará la
@@ -523,7 +523,7 @@
                         momento posterior, ni constituirá la renuncia a una
                         infracción. cualquier incumplimiento posterior.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Ninguna falla en el ejercicio, ni demora en el
                         ejercicio, por parte de cualquiera de las partes, de
                         cualquier derecho o poder bajo este Acuerdo operará como
@@ -538,7 +538,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Enmiendas a este Acuerdo
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community se reserva el derecho, a su entera
                         discreción, de modificar o reemplazar este Acuerdo en
                         cualquier momento. Si una revisión es importante,
@@ -547,7 +547,7 @@
                         constituye un cambio material se determinará a nuestro
                         exclusivo criterio.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si continúa accediendo o utilizando nuestra plataforma
                         después de que las revisiones entren en vigencia, usted
                         acepta estar sujeto a los términos revisados. Si no está
@@ -557,14 +557,14 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Acuerdo completo
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         El Acuerdo constituye el acuerdo completo entre usted y
                         The StartUp Community con respecto a su uso de la
                         plataforma y reemplaza todos los acuerdos escritos u
                         orales anteriores y contemporáneos entre usted y The
                         StartUp Community.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Es posible que esté sujeto a términos y condiciones
                         adicionales que se aplican cuando usa o compra otros
                         servicios de The StartUp Community, que The StartUp
@@ -574,7 +574,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Actualizaciones de nuestros Términos
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Podemos cambiar nuestro Servicio y nuestras políticas, y
                         es posible que debamos realizar cambios en estos
                         Términos para que reflejen con precisión nuestro
@@ -590,7 +590,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Propiedad intelectual
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         La plataforma y todo su contenido, características y
                         funcionalidad (que incluyen, entre otros, toda la
                         información, software, texto, pantallas, imágenes, video
@@ -611,7 +611,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Acuerdo de Arbitraje
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Esta sección se aplica a cualquier disputa, EXCEPTO QUE
                         NO INCLUYE UNA DISPUTA RELACIONADA CON RECLAMOS POR
                         RECURSOS INJUNTIVOS O EQUITATIVOS CON RESPECTO A LA
@@ -628,7 +628,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Aviso de Disputa
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         En el caso de una disputa, usted o The StartUp Community
                         deben darle al otro un Aviso de Disputa, que es una
                         declaración escrita que establece el nombre, la
@@ -649,7 +649,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Arbitraje Obligatorio
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si usted y The StartUp Community no resuelven ninguna
                         disputa mediante una negociación informal, cualquier
                         otro esfuerzo para resolver la disputa se llevará a cabo
@@ -672,7 +672,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Envíos y Privacidad
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         En el caso de que envíe o publique ideas, sugerencias
                         creativas, diseños, fotografías, información, anuncios,
                         datos o propuestas, incluidas ideas para productos,
@@ -691,7 +691,7 @@
                         utilizando tales ideas.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Promociones</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community puede, de vez en cuando, incluir
                         concursos, promociones, sorteos u otras actividades
                         ("Promociones") que requieren que envíe material o
@@ -704,7 +704,7 @@
                         participa en alguna Promoción, acepta cumplir con todas
                         las Reglas de promociones.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Es posible que se apliquen términos y condiciones
                         adicionales a las compras de bienes o servicios a través
                         de los Servicios, cuyos términos y condiciones forman
@@ -713,7 +713,7 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Errores Tipográficos
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         En el caso de que un producto y / o servicio se enumere
                         a un precio incorrecto o con información incorrecta
                         debido a un error tipográfico, tendremos el derecho de
@@ -728,7 +728,7 @@
                         el monto del cargo.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Diverso</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         Si por alguna razón un tribunal de jurisdicción
                         competente determina que alguna disposición o parte de
                         estos Términos y condiciones no se puede hacer cumplir,
@@ -763,14 +763,14 @@
                     <h1 class="font-bold text-xl text-zinc-900">
                         Descargo de Responsabilidad
                     </h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community no es responsable de ningún
                         contenido, código o cualquier otra imprecisión.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         The StartUp Community no ofrece garantías.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         En ningún caso The StartUp Community será responsable de
                         ningún daño especial, directo, indirecto, consecuente o
                         incidental o de cualquier daño, ya sea en una acción
@@ -781,7 +781,7 @@
                         contenido del Servicio en cualquier momento sin previo
                         aviso.
                     </p>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         El Servicio The StartUp Community y su contenido se
                         proporcionan "tal cual" y "según esté disponible" sin
                         ninguna garantía o representación de ningún tipo, ya sea
@@ -813,7 +813,7 @@
                         sin corrupción, oportuno o sin errores.
                     </p>
                     <h1 class="font-bold text-xl text-zinc-900">Contáctenos</h1>
-                    <p class="text-zinc-900 leading-5 text-justify">
+                    <p class="text-zinc-900 leading-5 text-justify text-sm">
                         No dude en contactarnos si tiene alguna pregunta.
                     </p>
                     <ul>

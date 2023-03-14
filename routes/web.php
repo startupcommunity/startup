@@ -36,21 +36,3 @@ require __DIR__ . '/web/terms.php';
 
 // engine
 require __DIR__ . '/web/engine.php';
-
-// email test
-// Route::get('/email-test', function () {
-//     // enviar email a luisbarrios0992@gmail.com
-//     $data = [
-//         'title' => 'Mail from ItSolutionStuff.com',
-//         'body' => 'This is for testing email using smtp.'
-//     ];
-//     $email = new WelcomeMail($data);
-
-//     try {
-//         Mail::to('luisbarrios0992@gmail.com')->send($email);
-//     } catch (\Exception $e) {
-//         return $e->getMessage();
-//     }
-
-//     return 'Email enviado';
-// })->name('email-test');
