@@ -106,7 +106,7 @@
                 <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.register') }}" target="_blank">
                     ¡QUIERO Registrarme!
                 </a>
-                <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.login') }}" target="_blank">
+                <a class="px-4 py-[12px] bg-app-blue-2 text-white uppercase rounded-lg no-underline hover:bg-app-blue-1 transition-all ease-in-out duration-200" href="{{ route('engine.login') }}" target="_blank">
                     {{--  svg login  --}}
                     <div class="flex items-center gap-1">
                         <svg width="68px" height="68px" viewBox="0 0 24 24" fill="none"
