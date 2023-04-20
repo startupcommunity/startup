@@ -53,7 +53,7 @@
 
 <body class="HomeGeneral01">
     <div id="app">
-        <div class="Cabezal_PrincipalDefault">
+        <div class="Cabezal_PrincipalDefault pb-20">
             @include('layouts.components.navbar')
         </div>
 

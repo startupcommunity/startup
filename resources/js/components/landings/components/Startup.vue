@@ -16,25 +16,27 @@
                     </div>
                     <div class="comming-text p-2">
                         <h4 class="text-center">{{ startup.name }}</h4>
+                        <p class="text-white font-light text-base leading-6 lg:w-[300px]">
+                            {{ truncateText(startup.brand_statement, 100) }}
+                        </p>
                     </div>
                 </div>
             </slide>
             <template #addons>
-                <navigation />
+                <Navigation />
             </template>
         </carousel>
     </div>
 </template>
 
 <script>
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 import Loader from "../../global/Loader.vue";
 export default {
     name: "Startup",
     components: {
         Carousel,
         Slide,
-        Pagination,
         Navigation,
         Loader,
     },
@@ -68,7 +70,7 @@ export default {
             } else if (this.window.width < 992) {
                 this.items = 2;
             } else {
-                this.items = 4;
+                this.items = 3;
             }
         },
 
@@ -113,6 +115,23 @@ export default {
          */
         goToDirectory(name) {
             globalThis.location.href = `/directory?category=${this.category}&search=${name}`;
+        },
+
+        /**
+         * Truncar texto
+         *
+         * @param {String} text     Texto a truncar
+         * @param {Number} value    Valor de truncado
+         * @returns {String}        Texto truncado
+         */
+        truncateText(text, value) {
+            if (!text) return "";
+
+            if (text.length > value) {
+                return text.substring(0, value) + "...";
+            }
+
+            return text;
         },
     },
 };

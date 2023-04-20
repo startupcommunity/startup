@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-white">
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
     <div class="container px-3 py-2">
 
         {{--  hamburguesa - xs  --}}
