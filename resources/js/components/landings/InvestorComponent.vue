@@ -1,52 +1,60 @@
 <template>
     <div>
-        <section>
-            <div class="container-fluid px-0 d-none d-md-block align-center">
+        <section
+            class="bg-[url(/img/backgrounds/investor_bg.png)] bg-no-repeat bg-center bg-cover min-h-[620px]"
+        >
+            <div class="container-fluid px-0 d-block align-center">
                 <div class="row mx-0 justify-content-center">
-                    <div class="col-lg-12 bg-investor-main">
-                        <div class="py-lg-5">
+                    <div class="col-lg-12">
+                        <div class="relative">
                             <img
                                 src="img/backgrounds/investor_space.png"
-                                class="img-fluid"
-                                alt=""
+                                class="img-fluid absolute top-20"
+                                alt="investor_space"
                                 data-aos="flip-right"
                                 data-aos-duration="1200"
                             />
+
+                            <div class="absolute inset-0 text-center lg:top-20">
+                                <h1 class="pt-5">
+                                    Invierte en ideas fuera de<br />
+                                    este planeta
+                                </h1>
+                                <h3 class="text-2xl font-light">
+                                    Un universo de ideas innovadoras está listo
+                                    para ser explorado.
+                                </h3>
+                                <div class="container">
+                                    <search-component
+                                        :selectedOpt="selectedOpt"
+                                    ></search-component>
+                                </div>
+                                <p class="text-2xl py-3">
+                                    ¿Tienes el combustible necesario para hacer
+                                    despegar esa StartUp única?
+                                </p>
+                                <div>
+                                    <a
+                                        :href="goToRegister"
+                                        target="_blank"
+                                        class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 text-3xl font-bold"
+                                    >
+                                        <span class="hidden lg:inline-flex">
+                                            ¡Únete ahora y acelera el
+                                            crecimiento de las startups!
+                                        </span>
+                                        <span class="inline-flex lg:hidden">
+                                            ¡Únete ahora!
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 text-center position-absolute py-5">
-                        <h1 class="pt-5">
-                            Invierte en ideas fuera de<br />
-                            este planeta
-                        </h1>
-                        <h4 class="text-2xl font-light">
-                            Un universo de ideas innovadoras está listo para ser
-                            explorado.
-                        </h4>
-                        <h3 class="text-2xl pb-1">
-                            ¿Tienes el combustible necesario para hacer despegar
-                            esa StartUp única?
-                        </h3>
-                        <div class="container">
-                            <search-component
-                                :selectedOpt="selectedOpt"
-                            ></search-component>
-                        </div>
-                        <p class="text-3xl font-bold text-white pt-3">
-                            <a
-                                :href="goToRegister"
-                                target="_blank"
-                                class="no-underline text-white hover:text-4xl duration-700 ease-out"
-                            >
-                                ¡Únete ahora y acelera el crecimiento de las
-                                startups!
-                            </a>
-                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="container-fluid d-block d-md-none py-4">
+            <!-- <div class="container-fluid d-block d-md-none py-4">
                 <div class="row align-items-center">
                     <div class="col-lg-12 text-center">
                         <h1 class="">
@@ -76,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="bg-[#0071BC] w-full">
