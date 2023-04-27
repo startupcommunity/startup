@@ -12,9 +12,6 @@
                             :src="startup.logo ? startup.logo : 'img/frame.png'"
                             class="aspect-square 8-[120px] h-[180px] max-w-[180px] max-h-[180px] rounded-full object-center object-contain border-2 border-blue-400 bg-white"
                             :alt="startup.name"
-                            :class="{
-                                'lg:mt-20': index % 2 === 0,
-                            }"
                         />
                     </div>
                     <div class="comming-text p-2">

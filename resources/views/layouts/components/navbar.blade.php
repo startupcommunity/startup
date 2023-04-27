@@ -120,9 +120,9 @@
                         <span>Iniciar sesión</span>
                     </div>
                 </a>
-                <a class="py-2.5 px-10 bg-[#bd13b8] uppercase rounded-md text-zinc-50 hover:text-[#bd13b8] no-underline hover:bg-white hover:border hover:border-[#bd13b8] duration-300 ease-out"
+                <a class="py-2 px-8 bg-[#bd13b8] uppercase rounded-md text-zinc-50 hover:text-white no-underline hover:bg-[#7a1276] duration-300 ease-out"
                     href="{{ route('engine.register') }}" target="_blank">
-                    <span class="font-semibold">
+                    <span class="font-semibold text-base">
                         Crear cuenta
                     </span>
                 </a>

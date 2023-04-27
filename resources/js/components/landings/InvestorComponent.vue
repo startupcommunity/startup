@@ -15,10 +15,8 @@
                                 data-aos-duration="1200"
                             />
 
-                            <div
-                                class="absolute inset-0 text-center top-16 lg:top-32"
-                            >
-                                <h1 class="pt-5">
+                            <div class="absolute inset-0 text-center lg:top-24">
+                                <h1 class="pt-5 font-bold">
                                     Invierte en ideas fuera de<br />
                                     este planeta
                                 </h1>
@@ -31,23 +29,23 @@
                                         :selectedOpt="selectedOpt"
                                     ></search-component>
                                 </div> -->
-                                <p class="text-2xl pb-3">
+                                <p class="text-2xl pb-3 font-bold -mt-3">
                                     ¿Tienes el combustible necesario para hacer
                                     despegar esa StartUp única?
                                 </p>
                                 <div>
+                                    <p
+                                        class="text-2xl lg:text-4xl py-3 font-bold -mt-3"
+                                    >
+                                        ¡Únete ahora y acelera el crecimiento de
+                                        las startups!
+                                    </p>
                                     <a
                                         target="_blank"
-                                        class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 text-2xl font-bold cursor-pointer"
+                                        class="no-underline uppercase text-white bg-app-pink-1 hover:bg-app-blue-2 duration-300 transition-all rounded-md px-16 py-2.5 text-lg font-medium cursor-pointer"
                                         @click.stop="linkedinAction"
                                     >
-                                        <span class="hidden lg:inline-flex">
-                                            ¡Únete ahora y acelera el
-                                            crecimiento de las startups!
-                                        </span>
-                                        <span class="inline-flex lg:hidden">
-                                            ¡Únete ahora!
-                                        </span>
+                                        Registrarme
                                     </a>
                                 </div>
                             </div>
@@ -102,15 +100,15 @@
             <div class="container px-lg-5">
                 <div class="row pb-5 align-items-center px-lg-5 mx-lg-5 pt-5">
                     <div
-                        class="col-lg-2 d-flex justify-content-center pb-2 md:pb-0"
+                        class="col-lg-4 d-flex justify-content-center pb-2 md:pb-0"
                     >
                         <img
                             src="img/investor/descubre.png"
-                            class="img-fluid w-40 md:w-full"
-                            alt=""
+                            class="w-56 md:w-80 md:h-52 aspect-video"
+                            alt="descubre"
                         />
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-8">
                         <h3
                             class="pb-1 text-3xl font-bold text-white text-md-start text-center"
                         >
@@ -125,15 +123,15 @@
                 </div>
                 <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
                     <div
-                        class="col-lg-2 d-flex justify-content-center order-lg-2 pb-2 md:pb-0"
+                        class="col-lg-4 d-flex justify-content-center order-lg-2 pb-2 md:pb-0"
                     >
                         <img
                             src="img/investor/impulsa.png"
-                            class="img-fluid w-40 md:w-full"
-                            alt=""
+                            class="w-56 h-56 md:w-52 md:h-52 aspect-video"
+                            alt="impulsa"
                         />
                     </div>
-                    <div class="col-lg-10 order-lg-1">
+                    <div class="col-lg-8 order-lg-1">
                         <h3
                             class="pb-1 text-3xl font-bold text-white text-md-start text-center"
                         >
@@ -148,15 +146,15 @@
                 </div>
                 <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
                     <div
-                        class="col-lg-2 d-flex justify-content-center pb-2 md:pb-0"
+                        class="col-lg-4 d-flex justify-content-center pb-2 md:pb-0"
                     >
                         <img
                             src="img/investor/conecta.png"
-                            class="img-fluid w-40 md:w-full"
-                            alt=""
+                            class="w-56 md:w-80 md:h-52 aspect-video"
+                            alt="conecta"
                         />
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-8">
                         <h3
                             class="pb-1 text-3xl font-bold text-white text-md-start text-center"
                         >
@@ -181,7 +179,7 @@
                 </h3>
 
                 <Loader v-if="loading" />
-                <carousel :items-to-show="1" v-else>
+                <carousel :items-to-show="1" v-else class="pt-5">
                     <slide v-for="investor in investors" :key="investor">
                         <div class="card comming-card">
                             <img
@@ -232,27 +230,19 @@
                     </div>
                     <div class="row pb-5">
                         <div class="col-12">
-                            <h3 class="font-black text-3xl text-white pb-3">
+                            <h3 class="font-black text-5xl text-white">
                                 ¿Estás listo para comenzar tu aventura?
                             </h3>
-                            <!-- <p class="font-bold text-xl text-white">
-                                Nuestras Startups están listas para despegar
-                                contigo.
-                            </p> -->
-                            <a
-                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 hidden lg:inline-flex cursor-pointer"
-                                @click.stop="linkedinAction"
-                                target="_blank"
-                            >
+                            <p class="font-bold text-xl text-white pb-3">
                                 Regístrate ahora y comienza a impulsar el
                                 crecimiento de startups únicas
-                            </a>
+                            </p>
                             <a
-                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 inline-flex lg:hidden cursor-pointer"
-                                @click.stop="linkedinAction"
                                 target="_blank"
+                                class="no-underline uppercase text-white bg-app-pink-1 hover:bg-app-blue-2 duration-300 transition-all rounded-md px-16 py-2.5 text-lg font-medium cursor-pointer"
+                                @click.stop="linkedinAction"
                             >
-                                Regístrate ahora
+                                Registrarme
                             </a>
 
                             <div class="mt-5">
@@ -341,18 +331,18 @@ export default {
                     type: "Inversor",
                     bio: "Estoy encantado de haber invertido en The Startup Community y de ser parte de su emocionante viaje de crecimiento. Estoy seguro de que tienen un futuro brillante por delante, y espero seguir apoyándolos en su camino hacia el éxito.",
                 },
-                {
-                    img: "img/investor/investor-3.png",
-                    fullname: "Juan Pérez",
-                    type: "Inversor",
-                    bio: "Gracias a The Startup Community, encontré una startup en pleno despegue. La plataforma me ayudó a tomar decisiones de inversión más inteligentes y a impulsar el crecimiento de negocios prometedores.",
-                },
-                {
-                    img: "img/investor/investor-4.png",
-                    fullname: "María Sánchez",
-                    type: "Inversora",
-                    bio: "The Startup Community me permitió ampliar mi red al conectarme con otros inversores y profesionales. Ahora cuento con un grupo de expertos que me ayuda a mejorar mis habilidades como inversor.",
-                },
+                // {
+                //     img: "img/investor/investor-3.png",
+                //     fullname: "Juan Pérez",
+                //     type: "Inversor",
+                //     bio: "Gracias a The Startup Community, encontré una startup en pleno despegue. La plataforma me ayudó a tomar decisiones de inversión más inteligentes y a impulsar el crecimiento de negocios prometedores.",
+                // },
+                // {
+                //     img: "img/investor/investor-4.png",
+                //     fullname: "María Sánchez",
+                //     type: "Inversora",
+                //     bio: "The Startup Community me permitió ampliar mi red al conectarme con otros inversores y profesionales. Ahora cuento con un grupo de expertos que me ayuda a mejorar mis habilidades como inversor.",
+                // },
             ],
         };
     },
