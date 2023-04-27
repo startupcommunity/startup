@@ -53,9 +53,11 @@
 
 <body class="HomeGeneral01">
     <div id="app">
-        <div class="Cabezal_PrincipalDefault pb-20">
-            @include('layouts.components.navbar')
-        </div>
+        <section class="pb-20">
+            <div class="container py-2 mx-auto">
+                @include('layouts.components.navbar')
+            </div>
+        </section>
 
         <main>
             @yield('content')

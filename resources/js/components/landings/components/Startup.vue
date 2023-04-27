@@ -2,7 +2,7 @@
     <div class="row px-5">
         <Loader v-if="loading" />
         <carousel :items-to-show="items" v-else>
-            <slide v-for="startup in startups" :key="startup">
+            <slide v-for="(startup, index) in startups" :key="index">
                 <div class="card comming-card">
                     <div
                         class="d-flex justify-content-center cursor-pointer"
@@ -12,11 +12,16 @@
                             :src="startup.logo ? startup.logo : 'img/frame.png'"
                             class="aspect-square 8-[120px] h-[180px] max-w-[180px] max-h-[180px] rounded-full object-center object-contain border-2 border-blue-400 bg-white"
                             :alt="startup.name"
+                            :class="{
+                                'lg:mt-20': index % 2 === 0,
+                            }"
                         />
                     </div>
                     <div class="comming-text p-2">
                         <h4 class="text-center">{{ startup.name }}</h4>
-                        <p class="text-white font-light text-base leading-6 lg:w-[300px]">
+                        <p
+                            class="text-white font-light text-base leading-6 lg:w-[300px]"
+                        >
                             {{ truncateText(startup.brand_statement, 100) }}
                         </p>
                     </div>

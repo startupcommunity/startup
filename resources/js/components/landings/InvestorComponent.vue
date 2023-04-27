@@ -15,7 +15,9 @@
                                 data-aos-duration="1200"
                             />
 
-                            <div class="absolute inset-0 text-center lg:top-20">
+                            <div
+                                class="absolute inset-0 text-center top-16 lg:top-32"
+                            >
                                 <h1 class="pt-5">
                                     Invierte en ideas fuera de<br />
                                     este planeta
@@ -24,20 +26,20 @@
                                     Un universo de ideas innovadoras está listo
                                     para ser explorado.
                                 </h3>
-                                <div class="container">
+                                <!-- <div class="container">
                                     <search-component
                                         :selectedOpt="selectedOpt"
                                     ></search-component>
-                                </div>
-                                <p class="text-2xl py-3">
+                                </div> -->
+                                <p class="text-2xl pb-3">
                                     ¿Tienes el combustible necesario para hacer
                                     despegar esa StartUp única?
                                 </p>
                                 <div>
                                     <a
-                                        :href="goToRegister"
                                         target="_blank"
-                                        class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 text-3xl font-bold"
+                                        class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 text-2xl font-bold cursor-pointer"
+                                        @click.stop="linkedinAction"
                                     >
                                         <span class="hidden lg:inline-flex">
                                             ¡Únete ahora y acelera el
@@ -211,8 +213,10 @@
         <!-- nuestra comunidad -->
 
         <!-- startups -->
-        <section>
-            <div data-aos="fade-up" class="bg-moon py-5">
+        <section
+            class="bg-[url(/img/backgrounds/moon.png)] bg-contain bg-no-repeat bg-bottom"
+        >
+            <div data-aos="fade-up" class="py-5">
                 <div class="container text-center">
                     <div class="text-center">
                         <h3 class="font-black text-5xl text-white">
@@ -236,16 +240,16 @@
                                 contigo.
                             </p> -->
                             <a
-                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 hidden lg:inline-flex"
-                                :href="goToRegister"
+                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 hidden lg:inline-flex cursor-pointer"
+                                @click.stop="linkedinAction"
                                 target="_blank"
                             >
                                 Regístrate ahora y comienza a impulsar el
                                 crecimiento de startups únicas
                             </a>
                             <a
-                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 inline-flex lg:hidden"
-                                :href="goToRegister"
+                                class="no-underline text-white hover:bg-[#2286b8] duration-700 ease-out border rounded-full px-5 py-2 inline-flex lg:hidden cursor-pointer"
+                                @click.stop="linkedinAction"
                                 target="_blank"
                             >
                                 Regístrate ahora
@@ -327,12 +331,24 @@ export default {
             investors: [
                 {
                     img: "img/investor/investor-1.png",
+                    fullname: "Miguel Sillero",
+                    type: "Inversor",
+                    bio: "Como inversor activo en el mundo empresarial, he tenido la oportunidad de trabajar con muchas startups a lo largo de los años. Pero debo decir que mi experiencia con The Startup Community ha sido excepcional. Desde el primer momento, quedé impresionado por la visión clara y la pasión del equipo fundador por su producto.",
+                },
+                {
+                    img: "img/investor/investor-2.png",
+                    fullname: "Kristian Salemi",
+                    type: "Inversor",
+                    bio: "Estoy encantado de haber invertido en The Startup Community y de ser parte de su emocionante viaje de crecimiento. Estoy seguro de que tienen un futuro brillante por delante, y espero seguir apoyándolos en su camino hacia el éxito.",
+                },
+                {
+                    img: "img/investor/investor-3.png",
                     fullname: "Juan Pérez",
                     type: "Inversor",
                     bio: "Gracias a The Startup Community, encontré una startup en pleno despegue. La plataforma me ayudó a tomar decisiones de inversión más inteligentes y a impulsar el crecimiento de negocios prometedores.",
                 },
                 {
-                    img: "img/investor/investor-2.png",
+                    img: "img/investor/investor-4.png",
                     fullname: "María Sánchez",
                     type: "Inversora",
                     bio: "The Startup Community me permitió ampliar mi red al conectarme con otros inversores y profesionales. Ahora cuento con un grupo de expertos que me ayuda a mejorar mis habilidades como inversor.",
@@ -341,15 +357,15 @@ export default {
         };
     },
 
-    computed: {
-        goToRegister() {
-            return route("engine.register");
-        },
-    },
-
     methods: {
         goToRegister() {
             window.location.href = route("engine.register");
+        },
+
+        linkedinAction() {
+            window.lintrk("track", { conversion_id: 13222705 });
+
+            this.goToRegister();
         },
     },
 };

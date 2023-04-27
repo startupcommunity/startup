@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-white fixed-top">
-    <div class="container px-3 py-2">
-
+    <div class="container py-2">
         {{--  hamburguesa - xs  --}}
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarCanvaStartup"
             aria-controls="navbarCanvaStartup">
@@ -83,47 +82,93 @@
         </a>
 
         {{--  menu md  --}}
-        <div class="justify-center items-center hidden md:flex">
-            <ul class="flex items-center mt-3 gap-3 px-5">
-                <li>
-                    <a class="nav-link text-center" aria-current="page" href="{{ route('landings.startup') }}">
-                        Startups
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link text-center" aria-current="page" href="{{ route('landings.professional') }}">
-                        Profesionales
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link text-center" aria-current="page" href="{{ route('landings.investor') }}">
-                        Inversores
-                    </a>
-                </li>
-                </li>
-            </ul>
-            <div class="flex justify-end items-center gap-3">
-                <a class="btn btn-primary btn-lg uppercase" href="{{ route('engine.register') }}" target="_blank">
-                    ¡QUIERO Registrarme!
+        <ul class="mt-3 gap-3 px-5 justify-start hidden md:flex">
+            <li>
+                <a class="nav-link" aria-current="page" href="/">
+                    Home
                 </a>
-                <a class="px-4 py-[12px] bg-app-blue-2 text-white uppercase rounded-lg no-underline hover:bg-app-blue-1 transition-all ease-in-out duration-200 font-semibold" href="{{ route('engine.login') }}" target="_blank">
+            </li>
+            <li>
+                <a class="nav-link" aria-current="page" href="{{ route('landings.startup') }}">
+                    Startups
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" aria-current="page" href="{{ route('landings.professional') }}">
+                    Profesionales
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" aria-current="page" href="{{ route('landings.investor') }}">
+                    Inversores
+                </a>
+            </li>
+        </ul>
+        <div class="hidden md:flex justify-between items-center">
+            <div class="flex justify-end items-center gap-3">
+                <a class="px-10 py-2.5 bg-white text-app-blue-2 no-underline hover:bg-app-blue-1 transition-all ease-in-out duration-200 font-semibold border-0"
+                    href="{{ route('engine.login') }}" target="_blank">
                     {{--  svg login  --}}
-                    <div class="flex items-center gap-1">
-                        <svg width="68px" height="68px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M15 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H15M11 16L15 12M15 12L11 8M15 12H3"
-                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </g>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user bg-app-blue-2 p-2 rounded-full hover:bg-app-blue-1 duration-300 ease-out" width="40"
+                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                         </svg>
-                        <span>Login</span>
+                        <span>Iniciar sesión</span>
                     </div>
+                </a>
+                <a class="py-2.5 px-10 bg-[#bd13b8] uppercase rounded-md text-zinc-50 hover:text-[#bd13b8] no-underline hover:bg-white hover:border hover:border-[#bd13b8] duration-300 ease-out"
+                    href="{{ route('engine.register') }}" target="_blank">
+                    <span class="font-semibold">
+                        Crear cuenta
+                    </span>
                 </a>
             </div>
         </div>
     </div>
 </nav>
+
+{{--  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>  --}}
