@@ -104,7 +104,7 @@
                     >
                         <img
                             src="img/investor/descubre.png"
-                            class="w-56 md:w-80 md:h-52 aspect-video"
+                            class="img-fluid aspect-video"
                             alt="descubre"
                         />
                     </div>
@@ -123,15 +123,15 @@
                 </div>
                 <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
                     <div
-                        class="col-lg-4 d-flex justify-content-center order-lg-2 pb-2 md:pb-0"
+                        class="col-lg-2 d-flex justify-content-center order-lg-2 pb-2 md:pb-0"
                     >
                         <img
                             src="img/investor/impulsa.png"
-                            class="w-56 h-56 md:w-52 md:h-52 aspect-video"
+                            class="img-fluid"
                             alt="impulsa"
                         />
                     </div>
-                    <div class="col-lg-8 order-lg-1">
+                    <div class="col-lg-10 order-lg-1">
                         <h3
                             class="pb-1 text-3xl font-bold text-white text-md-start text-center"
                         >
@@ -150,7 +150,7 @@
                     >
                         <img
                             src="img/investor/conecta.png"
-                            class="w-56 md:w-80 md:h-52 aspect-video"
+                            class="img-fluid aspect-video"
                             alt="conecta"
                         />
                     </div>
@@ -351,7 +351,6 @@ export default {
         goToRegister() {
             window.location.href = route("engine.register");
         },
-
         linkedinAction() {
             window.lintrk("track", { conversion_id: 13222705 });
 
