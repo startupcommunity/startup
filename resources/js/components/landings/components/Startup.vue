@@ -1,26 +1,37 @@
 <template>
-    <div class="row px-5">
+    <div class="px-3 lg:px-5">
         <Loader v-if="loading" />
-        <carousel :items-to-show="items" v-else>
-            <slide v-for="(startup, index) in startups" :key="index">
-                <div class="card comming-card">
+        <carousel
+            :items-to-show="items"
+            v-else
+            :wrapAround="true"
+            :transition="500"
+        >
+            <slide
+                v-for="(startup, index) in startups"
+                :key="index"
+                class="mt-5 pt-3 flex justify-center items-center"
+            >
+                <div class="w-full h-[400px] border-0 bg-transparent">
                     <div
-                        class="d-flex justify-content-center cursor-pointer"
+                        class="flex justify-center cursor-pointer w-full"
                         @click.stop="goToDirectory(startup.name)"
                     >
                         <img
                             :src="startup.logo ? startup.logo : 'img/frame.png'"
-                            class="aspect-square 8-[120px] h-[180px] max-w-[180px] max-h-[180px] rounded-full object-center object-contain border-2 border-blue-400 bg-white"
                             :alt="startup.name"
+                            class="bg-white border-2 border-blue-400 aspect-square w-[160px] h-[160px] rounded-full object-center object-contain carousel__item"
                         />
                     </div>
-                    <div class="comming-text p-2">
+                    <div class="min-w-full p-2 flex flex-col items-center">
                         <h4 class="text-center">{{ startup.name }}</h4>
-                        <p
-                            class="text-white font-light text-base leading-6 lg:w-[300px]"
-                        >
-                            {{ truncateText(startup.brand_statement, 100) }}
-                        </p>
+                        <div class="w-64">
+                            <p
+                                class="text-white font-light text-sm lg:text-base leading-6 text-center"
+                            >
+                                {{ truncateText(startup.brand_statement, 100) }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </slide>
@@ -138,3 +149,14 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1.3);
+}
+</style>

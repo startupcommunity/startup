@@ -53,38 +53,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="container-fluid d-block d-md-none py-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="">
-                            Invierte en <br />ideas fuera de este planeta
-                        </h1>
-                        <h4 class="py-4">
-                            ¿Tienes el combustible necesario para hacer despegar
-                            esa StartUp única?
-                        </h4>
-                        <img
-                            src="img/startup/rocket.png"
-                            class="img-fluid"
-                            alt=""
-                        />
-                        <h3>
-                            Busca o deja que te encuentren los inversores más
-                            adecuados para ello.
-                        </h3>
-                        <h5 class="pt-4">
-                            (La conexión con los inversores dependen de los
-                            permisos concedidos por los mismos)
-                        </h5>
-                        <div class="container">
-                            <search-component
-                                :selectedOpt="selectedOpt"
-                            ></search-component>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </section>
 
         <section class="bg-[#0071BC] w-full">
@@ -255,41 +223,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="container d-none d-md-block px-5">
-                    <div
-                        class="row align-items-lg-end align-items-sm-start"
-                        style="height: 40%"
-                    >
-                        <div class="col-lg-4 col-xs-12 text-center">
-                            <a
-                                :href="this.startupRoute"
-                                class="btn btn-outline-primary btn-lg"
-                                style="min-width: 300px"
-                            >
-                                STARTUP O PROYECTOS
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xs-12 text-center">
-                            <a
-                                :href="this.professionalRoute"
-                                class="btn btn-outline-primary btn-lg"
-                                style="min-width: 300px"
-                            >
-                                PROFESIONALES
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xs-12 text-center">
-                            <a
-                                :href="this.investorRoute"
-                                class="btn btn-outline-primary btn-lg"
-                                style="min-width: 300px"
-                            >
-                                INVERSOR
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
         <!-- /startups -->
@@ -348,9 +281,17 @@ export default {
     },
 
     methods: {
+        /**
+         * Ir a la pagina de registro
+         */
         goToRegister() {
             window.location.href = route("engine.register");
         },
+
+        /**
+         * Tracking para linkedin
+         * y redireccionar a registro
+         */
         linkedinAction() {
             window.lintrk("track", { conversion_id: 13222705 });
 
