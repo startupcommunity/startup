@@ -350,13 +350,13 @@ export default {
             loading: false,
             investors: [
                 {
-                    img: "img/startup/testimonio_!.png",
+                    img: "img/startup/testimonio_1.png",
                     fullname: "Ana Rodríguez",
                     type: "CEO de SolarTech",
                     bio: "Desde que nos unimos a The Startup Community, hemos logrado conectar con inversores que realmente creen en nuestra visión. Gracias a su apoyo, hemos podido expandir nuestro negocio y llegar a nuevos mercados. La plataforma ha sido fundamental para nuestro crecimiento y nos ha permitido contratar a profesionales clave para nuestro equipo. ¡No podríamos estar más satisfechos!.",
                 },
                 {
-                    img: "img/investor/investor-2.png",
+                    img: "img/startup/testimonio_2.png",
                     fullname: "Pedro Gómez",
                     type: "Fundador de EcoInnova",
                     bio: "En The Startup Community, encontramos una red increíble de profesionales y expertos dispuestos a ayudarnos a mejorar nuestro producto. Gracias a esta plataforma, logramos asociarnos con un inversor que no solo aportó capital, sino también valiosos consejos y contactos en la industria. ¡Nuestro negocio está alcanzando nuevas alturas y no podríamos haberlo hecho sin The Startup Community!.",
