@@ -46,8 +46,6 @@
             s.parentNode.insertBefore(b, s);
         })(window.lintrk);
     </script>
-
-
     @routes
 </head>
 

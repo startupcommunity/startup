@@ -42,6 +42,7 @@ import InformationInvestorComponent from "./components/InformationInvestorCompon
 // módulos
 import Contact from "./modules/contact.js";
 import Term from "./modules/term.js";
+import "./modules/navbar.js";
 
 // crear app vue
 import { createApp } from "vue";

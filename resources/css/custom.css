@@ -916,3 +916,25 @@ ul.card-startup-detail li::before {
     border-left: 400px solid #fff;
     transform: translate(100%);
 }
+
+
+/* aumentar y disminuir el navbar tamaño del navbar  */
+#navbar-fixed.shrink {
+    height: 50px;
+    transition: height 0.3s ease-in-out;
+}
+
+#img-startup-md.shrink {
+    height: 40px;
+    transition: height 0.3s ease-in-out;
+}
+
+#img-startup-xs.shrink {
+    height: 20px;
+    transition: height 0.3s ease-in-out;
+}
+
+#btn-burguer.shrink {
+    height: 20px;
+    transition: height 0.3s ease-in-out;
+}

@@ -24,11 +24,6 @@
                                     Un universo de ideas innovadoras está listo
                                     para ser explorado.
                                 </h3>
-                                <!-- <div class="container">
-                                    <search-component
-                                        :selectedOpt="selectedOpt"
-                                    ></search-component>
-                                </div> -->
                                 <p class="text-2xl pb-3 font-bold -mt-3">
                                     ¿Tienes el combustible necesario para hacer
                                     despegar esa StartUp única?
@@ -264,18 +259,6 @@ export default {
                     type: "Inversor",
                     bio: "Estoy encantado de haber invertido en The Startup Community y de ser parte de su emocionante viaje de crecimiento. Estoy seguro de que tienen un futuro brillante por delante, y espero seguir apoyándolos en su camino hacia el éxito.",
                 },
-                // {
-                //     img: "img/investor/investor-3.png",
-                //     fullname: "Juan Pérez",
-                //     type: "Inversor",
-                //     bio: "Gracias a The Startup Community, encontré una startup en pleno despegue. La plataforma me ayudó a tomar decisiones de inversión más inteligentes y a impulsar el crecimiento de negocios prometedores.",
-                // },
-                // {
-                //     img: "img/investor/investor-4.png",
-                //     fullname: "María Sánchez",
-                //     type: "Inversora",
-                //     bio: "The Startup Community me permitió ampliar mi red al conectarme con otros inversores y profesionales. Ahora cuento con un grupo de expertos que me ayuda a mejorar mis habilidades como inversor.",
-                // },
             ],
         };
     },
