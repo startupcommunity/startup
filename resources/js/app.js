@@ -81,3 +81,5 @@ app.use(VueReCaptcha, { siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY });
 
 // montar app
 app.mount("#app");
+
+console.log('hola desde codespace');
