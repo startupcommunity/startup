@@ -61,6 +61,12 @@
                         Terminos y condiciones
                     </a>
                 </p>
+                <p class="mb-1">
+                    <a href="{{ route('politics.show') }}"
+                        class="text-gray-300 no-underline text-base font-light hover:text-white">
+                        Politicas de privacidad
+                    </a>
+                </p>
             </div>
             <div>
                 <h5 class="pb-2 text-lg font-bold">Atención</h5>

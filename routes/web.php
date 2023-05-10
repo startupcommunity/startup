@@ -34,6 +34,9 @@ require __DIR__ . '/web/contact.php';
 // términos y condiciones
 require __DIR__ . '/web/terms.php';
 
+// políticas de privacidad
+require __DIR__ . '/web/politics.php';
+
 // engine
 require __DIR__ . '/web/engine.php';
 

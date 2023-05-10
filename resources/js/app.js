@@ -1,6 +1,7 @@
+
+// css
 // importar estilos
 import "bootstrap/dist/css/bootstrap.css";
-// bundle de bootstrap
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../css/custom.css";
@@ -13,6 +14,7 @@ import "vue-awesome-paginate/dist/style.css";
 
 // import plugins
 import "../js/bootstrap";
+import "./modules/navbar.js";
 import GlobalMixin from "./mixins/globalMixin.js";
 import VueAwesomePaginate from "vue-awesome-paginate";
 import { Bootstrap5Pagination } from "laravel-vue-pagination";
@@ -39,16 +41,14 @@ import InformationProfessional from "./components/InformationProfessionalCompone
 import SingleInvestorComponent from "./components/SingleInvestorComponent.vue";
 import InformationInvestorComponent from "./components/InformationInvestorComponent.vue";
 
-// módulos
-import Contact from "./modules/contact.js";
-import Term from "./modules/term.js";
-import "./modules/navbar.js";
 
-// crear app vue
+// -----------
+// --- VUE ---
+// -----------
 import { createApp } from "vue";
 const app = createApp({});
 
-// registrar componentes
+// componentes
 app.component("home-component", HomeComponent);
 app.component("example-component", ExampleComponent);
 app.component("startups-component", StartupsComponent);
@@ -72,10 +72,16 @@ app.component("information-professional-component", InformationProfessional);
 app.component("single-investor-component", SingleInvestorComponent);
 app.component("information-investor-component", InformationInvestorComponent);
 
+// importar módulos - componentes
+import Contact from "./modules/contact.js";
+import Term from "./modules/term.js";
+import Policy from "./modules/privacy-policy.js";
+
 // use and install
 app.use(GlobalMixin); // global mixin
 app.use(Contact); // modulo contacto
 app.use(Term); // modulo términos
+app.use(Policy); // modulo política de privacidad
 app.use(VueAwesomePaginate);
 app.use(VueReCaptcha, { siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY });
 
