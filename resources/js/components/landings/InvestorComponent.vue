@@ -247,12 +247,12 @@ export default {
             loading: false,
 
             investors: [
-                {
-                    img: "img/investor/investor-1.png",
-                    fullname: "Miguel Sillero",
-                    type: "Inversor",
-                    bio: "Como inversor activo en el mundo empresarial, he tenido la oportunidad de trabajar con muchas startups a lo largo de los años. Pero debo decir que mi experiencia con The Startup Community ha sido excepcional. Desde el primer momento, quedé impresionado por la visión clara y la pasión del equipo fundador por su producto.",
-                },
+                // {
+                //     img: "img/investor/investor-1.png",
+                //     fullname: "Miguel Sillero",
+                //     type: "Inversor",
+                //     bio: "Como inversor activo en el mundo empresarial, he tenido la oportunidad de trabajar con muchas startups a lo largo de los años. Pero debo decir que mi experiencia con The Startup Community ha sido excepcional. Desde el primer momento, quedé impresionado por la visión clara y la pasión del equipo fundador por su producto.",
+                // },
                 {
                     img: "img/investor/investor-2.png",
                     fullname: "Kristian Salemi",
