@@ -7,13 +7,8 @@
     z-index: 997;
     padding: 16px 72px 11px; */
     background: #fff !important;
-    transition: all 0.5s;
-    padding-top: 0;
-}
-
-.Cabezal_PrincipalDefault nav {
-    /* background: rgba(0, 0, 0, 0); */
-    background: #fff;
+    /* transition: all 0.5s; */
+    /* padding-top: 0; */
 }
 
 .home-main {
@@ -49,6 +44,7 @@
     width: auto;
     height: 86px;
 }
+
 .home-f-text {
     background-color: #0e5394;
     width: auto;
@@ -269,6 +265,7 @@ label {
     border: none;
     color: #bd13b8;
 }
+
 .search-bar .search-input {
     border: 0px;
     /* width: 94%; */
@@ -348,24 +345,35 @@ label {
 }
 
 .bg-investor-main {
-    background: url(/img/backgrounds/investor_bg.png) no-repeat right center;
-    max-width: 1440px;
+    background: url(/img/backgrounds/investor_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* max-width: 1440px; */
 }
 
 .bg-startup-main {
-    background: url(/img/startup/bg-main.png) no-repeat right bottom;
+    background: url(/img/startup/bg-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 619px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 .bg-moon {
-    background: url(/img/backgrounds/moon.png) no-repeat center bottom;
+    background: url(/img/backgrounds/moon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-moon-astro {
-    background: url(/img/backgrounds/home_moon_astro.png) no-repeat center
-        bottom;
-    height: 562px;
+    background: url(/img/backgrounds/home_moon_astro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
 }
 
 .bg-planet-space {
@@ -374,8 +382,7 @@ label {
 }
 
 .bg-moon-planet {
-    background: url(/img/backgrounds/home_moon_planet_space.png) no-repeat
-        center bottom;
+    background: url(/img/backgrounds/home_moon_planet_space.png) no-repeat center bottom;
 }
 
 .bg-startup-feat {
@@ -401,6 +408,7 @@ label {
     width: 18%;
     margin: auto;
 }
+
 .benefit-item .benefit-text {
     width: 82%;
     padding: 0.6em 0.4em;
@@ -452,9 +460,11 @@ label {
     width: 320px;
     height: 72px;
 }
+
 .benefit-icon {
     width: 30%;
 }
+
 .benefit-text {
     width: 70%;
 }
@@ -711,16 +721,17 @@ width: 5rem;
         display: none;
     }
 
-    
+
 }
 
 /* 
 dashborad content
 */
 
-.card-container{
-  padding-right: 1em;
+.card-container {
+    padding-right: 1em;
 }
+
 .card-overlay:hover {
     background-color: #0e5394;
     color: #fff !important;
@@ -733,13 +744,16 @@ dashborad content
 .card-overlay:hover h6 {
     color: #fff !important;
 }
+
 .card-overlay:hover .single-card-logo {
     border: 5px solid #fff;
     background-color: #fff;
 }
+
 .card-overlay:hover .single-type-logo {
     display: none;
 }
+
 .card-overlay:hover .single-type-logo-white {
     display: block;
 }
@@ -748,13 +762,14 @@ dashborad content
     border: none !important;
 }
 
-.card-result > .card-body {
+.card-result>.card-body {
     min-height: 165px;
 }
 
 .card-result h6 {
     color: #0e5394;
 }
+
 .single-card-logo {
     border: 5px solid #80b8de;
     width: 100%;
@@ -772,15 +787,15 @@ dashborad content
 }
 
 @media (max-width: 768px) {
-  .single-card-logo{
-    height: 80px;
-  }
+    .single-card-logo {
+        height: 80px;
+    }
 
-  .single-card-logo-inf{
-    height: 50px;
-    width: 50px;
-    min-height: unset;
-  }
+    .single-card-logo-inf {
+        height: 50px;
+        width: 50px;
+        min-height: unset;
+    }
 }
 
 
@@ -803,18 +818,18 @@ dashborad content
     overflow: hidden;
 }
 
-ul.card-startup-detail{
-  list-style: none;
-  padding-left: 2em;
+ul.card-startup-detail {
+    list-style: none;
+    padding-left: 2em;
 }
 
 ul.card-startup-detail li::before {
-  content: "\2022";  
-  color: #0071bc; 
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
-  margin-left: -1em; 
+    content: "\2022";
+    color: #0071bc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .single-card {
@@ -840,8 +855,8 @@ ul.card-startup-detail li::before {
 }
 
 /* Card information */
-.card-description{
-  color: #292929;
+.card-description {
+    color: #292929;
 }
 
 
@@ -850,8 +865,9 @@ ul.card-startup-detail li::before {
     display: flex;
     column-gap: 10px;
     margin-bottom: 0;
-  }
-  .paginate-buttons {
+}
+
+.paginate-buttons {
     height: 40px;
     width: 40px;
     border-radius: 20px;
@@ -859,16 +875,66 @@ ul.card-startup-detail li::before {
     background-color: #fff;
     border: 1px solid #fff;
     color: black;
-  }
-  .paginate-buttons:hover {
+}
+
+.paginate-buttons:hover {
     background-color: #0071bc;
     color: #fff;
-  }
-  .active-page {
+}
+
+.active-page {
     background-color: #0071bc;
     border: 1px solid #0071bc;
     color: white;
-  }
-  .active-page:hover {
+}
+
+.active-page:hover {
     background-color: #2988c8;
-  }
+}
+
+
+/* navbar landing */
+.offcanvas-custom {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #fff;
+    visibility: hidden;
+    background-color: #0e5394;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.offcanvas-custom.offcanvas-custom-end {
+    top: 0;
+    right: 0;
+    width: 400px;
+    border-left: 400px solid #fff;
+    transform: translate(100%);
+}
+
+
+/* aumentar y disminuir el navbar tamaño del navbar  */
+#navbar-fixed.shrink {
+    height: 50px;
+    transition: height 0.3s ease-in-out;
+}
+
+#img-startup-md.shrink {
+    height: 40px;
+    transition: height 0.3s ease-in-out;
+}
+
+#img-startup-xs.shrink {
+    height: 20px;
+    transition: height 0.3s ease-in-out;
+}
+
+#btn-burguer.shrink {
+    height: 20px;
+    transition: height 0.3s ease-in-out;
+}

@@ -14,10 +14,7 @@ class LandingController extends Controller
      */
     public function index()
     {
-        //if (auth()->user()->hasRole(Role::all())) {
-            return view('landings.index');
-        //}
-        //return redirect()->route('select-role');
+        return view('landings.index');
     }
 
     /**
@@ -28,7 +25,7 @@ class LandingController extends Controller
     public function investor()
     {
         //if (auth()->user()->hasRole(Role::all())) {
-            return view('landings.investor');
+        return view('landings.investor');
         //}
         //return redirect()->route('select-role');
     }
@@ -41,7 +38,7 @@ class LandingController extends Controller
     public function startup()
     {
         //if (auth()->user()->hasRole(Role::all())) {
-            return view('landings.startup');
+        return view('landings.startup');
         //}
         //return redirect()->route('select-role');
     }
@@ -54,7 +51,7 @@ class LandingController extends Controller
     public function professional()
     {
         //if (auth()->user()->hasRole(Role::all())) {
-            return view('landings.professional');
+        return view('landings.professional');
         //}
         //return redirect()->route('select-role');
     }
@@ -77,11 +74,9 @@ class LandingController extends Controller
     public function perform()
     {
         Session::flush();
-        
+
         Auth::logout();
 
         return redirect('login');
     }
-
-
 }

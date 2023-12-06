@@ -7,7 +7,7 @@
                 >
                     <img
                         :src="startup.logo ? startup.logo : 'img/frame.png'"
-                        class="rounded-circle single-card-logo-inf"
+                        class="aspect-square w-[60px] h-[60px] max-w-[60px] max-h-[60px] rounded-full object-center object-contain border-2 border-blue-400"
                         :alt="startup.name"
                     />
                 </div>

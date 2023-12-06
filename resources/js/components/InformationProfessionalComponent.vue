@@ -5,7 +5,7 @@
                 <div class="col-md-2 d-flex justify-content-center align-items-center">
                     <img
                         :src="professional.logo ? professional.logo : 'img/frame.png'"
-                        class="rounded-circle single-card-logo-inf"
+                        class="aspect-square w-[60px] h-[60px] max-w-[60px] max-h-[60px] rounded-full object-center object-contain border-2 border-blue-400"
                         :alt="professional.name"
                     />
                 </div>
@@ -13,11 +13,6 @@
                     <h4 class="dark-text">{{ professional.name }}</h4>
                 </div>
                 <div class="col-md-2">
-                    <!--<img
-                        src="img/single-logo-startup.png"
-                        class="single-type-logo"
-                    />
-                    -->
                 </div>
             </div>
             <div class="row">
